@@ -1,0 +1,27 @@
+{
+  "name": "com.klem.socket-chat",
+  "version": "0.0.1",
+  "displayName": "Socket.io chat",
+  "description": "A chat system for Unity",
+  "unity": "2019.1",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+  "keywords": [
+    "chat",
+    "networking"
+  ],
+  "author": {
+    "name": "Klem",
+    "email": "clementlandais@gmail.com",
+    "url": "https://github.com/clandais"
+  },
+  
+  "samples": [
+    {
+      "displayName": "Simple Chat Sample",
+      "description": "A simple chat sample. No Photon",
+      "path": "Samples~/SimpleChatSample"
+    }
+  ]
+}
