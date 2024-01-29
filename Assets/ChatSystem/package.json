@@ -1,6 +1,6 @@
 {
   "name": "com.klem.socket-chat",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "displayName": "Socket.io chat",
   "description": "A chat system for Unity",
   "unity": "2019.1",

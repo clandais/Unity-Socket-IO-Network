@@ -8,7 +8,8 @@ namespace Klem.SocketChat.ChatSystem
     public class MonoBehaviourSocketCallBacks : MonoBehaviour,
         IConnectionCallbacks,
         IErrorCallbacks,
-        IRoomCallbacks
+        IRoomCallbacks,
+        IChatMessageCallbacks
     {
         /// <summary>
         ///     When overriding this method, make sure to call base.OnEnable() to add the callback target.
@@ -44,6 +45,12 @@ namespace Klem.SocketChat.ChatSystem
         ///     The reason of the disconnection.
         /// </param>
         public virtual void OnDisconnecting(string reason) { }
+        
+        /// <summary>
+        ///   Called when the client is disconnected from the server.
+        /// </summary>
+        /// <param name="reason"></param>
+        public virtual void OnDisconnected(string reason) { }
 
         /// <summary>
         ///     Called when the client is trying to reconnect to the server.
@@ -71,15 +78,6 @@ namespace Klem.SocketChat.ChatSystem
         /// </summary>
         /// <param name="obj"></param>
         public virtual void OnError(string obj) { }
-
-
-        /// <summary>
-        ///     Called when the client is notified of a new chat message.
-        /// </summary>
-        /// <param name="message">
-        ///     The message object containing the sender and the message. See : <see cref="ChatMessage" />
-        /// </param>
-        public virtual void OnChatMessage(ChatMessage message) { }
 
 
         /// <summary>
@@ -181,5 +179,21 @@ namespace Klem.SocketChat.ChatSystem
         /// </summary>
         /// <param name="room"></param>
         public virtual void OnRoomLeftByOtherUser(RoomAndUser room) { }
+
+        /// <summary>
+        ///   Called when the client receives a general chat message.
+        /// </summary>
+        /// <param name="message">
+        ///    The message object containing the sender and the message. See : <see cref="ChatMessage" />
+        /// </param>
+        public virtual void OnGeneralChatMessage(ChatMessage message) { }
+        
+        /// <summary>
+        ///  Called when the client receives a room chat message.
+        /// </summary>
+        /// <param name="message">
+        ///   The message object containing the sender and the message. See : <see cref="ChatMessage" />
+        /// </param>
+        public virtual void OnRoomChatMessage(ChatMessage message) { }
     }
 }
