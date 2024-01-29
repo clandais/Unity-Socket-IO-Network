@@ -33,6 +33,7 @@ namespace Klem.SocketChat.ChatSystem.SimpleChatSample
         private void Start()
         {
             generalChatText.text = "";
+            roomChatText.text = "";
             _messages.Clear();
             _roomMessages.Clear();
             
@@ -95,6 +96,13 @@ namespace Klem.SocketChat.ChatSystem.SimpleChatSample
         public override void OnNewUserConnectedToMaster(SocketIOUser user)
         {
             SetServerMessage($"User <color=#{user.Color}><b>{user.Username}</b></color> connected to master");
+        }
+
+
+        public override void OnRoomLeft(Room room)
+        {
+            _roomMessages.Clear();
+            roomChatText.text = "";
         }
 
         public override void OnRoomUserJoined(RoomAndUser andUser)
