@@ -21,7 +21,7 @@
     {
       "displayName": "Simple Chat Sample",
       "description": "A simple chat sample. No Photon",
-      "path": "Samples/SimpleChatSample"
+      "path": "Samples~/SimpleChatSample"
     }
   ]
 }
