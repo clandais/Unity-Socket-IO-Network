@@ -1,0 +1,87 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.DataClasses
+  commentId: N:Klem.SocketChat.ChatSystem.DataClasses
+  id: Klem.SocketChat.ChatSystem.DataClasses
+  children:
+  - Klem.SocketChat.ChatSystem.DataClasses.ChatInvite
+  - Klem.SocketChat.ChatSystem.DataClasses.ChatMessage
+  - Klem.SocketChat.ChatSystem.DataClasses.Room
+  - Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser
+  - Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+  - Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+  langs:
+  - csharp
+  - vb
+  name: Klem.SocketChat.ChatSystem.DataClasses
+  nameWithType: Klem.SocketChat.ChatSystem.DataClasses
+  fullName: Klem.SocketChat.ChatSystem.DataClasses
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Klem.SocketChat.ChatSystem.DataClasses.ChatInvite
+  commentId: T:Klem.SocketChat.ChatSystem.DataClasses.ChatInvite
+  parent: Klem.SocketChat.ChatSystem.DataClasses
+  name: ChatInvite
+  nameWithType: ChatInvite
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.ChatInvite
+- uid: Klem.SocketChat.ChatSystem.DataClasses.ChatMessage
+  commentId: T:Klem.SocketChat.ChatSystem.DataClasses.ChatMessage
+  parent: Klem.SocketChat.ChatSystem.DataClasses
+  name: ChatMessage
+  nameWithType: ChatMessage
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.ChatMessage
+- uid: Klem.SocketChat.ChatSystem.DataClasses.Room
+  commentId: T:Klem.SocketChat.ChatSystem.DataClasses.Room
+  parent: Klem.SocketChat.ChatSystem.DataClasses
+  name: Room
+  nameWithType: Room
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.Room
+- uid: Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser
+  commentId: T:Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser
+  parent: Klem.SocketChat.ChatSystem.DataClasses
+  name: RoomAndUser
+  nameWithType: RoomAndUser
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+  commentId: T:Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+  parent: Klem.SocketChat.ChatSystem.DataClasses
+  name: SocketIOUser
+  nameWithType: SocketIOUser
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+  commentId: T:Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+  parent: Klem.SocketChat.ChatSystem.DataClasses
+  name: SocketServerConnection
+  nameWithType: SocketServerConnection
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+- uid: Klem.SocketChat.ChatSystem.DataClasses
+  commentId: N:Klem.SocketChat.ChatSystem.DataClasses
+  name: Klem.SocketChat.ChatSystem.DataClasses
+  nameWithType: Klem.SocketChat.ChatSystem.DataClasses
+  fullName: Klem.SocketChat.ChatSystem.DataClasses
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses

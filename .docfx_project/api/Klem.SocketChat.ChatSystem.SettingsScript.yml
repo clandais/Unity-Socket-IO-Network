@@ -1,0 +1,52 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.SettingsScript
+  commentId: N:Klem.SocketChat.ChatSystem.SettingsScript
+  id: Klem.SocketChat.ChatSystem.SettingsScript
+  children:
+  - Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  langs:
+  - csharp
+  - vb
+  name: Klem.SocketChat.ChatSystem.SettingsScript
+  nameWithType: Klem.SocketChat.ChatSystem.SettingsScript
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  commentId: T:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  parent: Klem.SocketChat.ChatSystem.SettingsScript
+  name: ChatSettings
+  nameWithType: ChatSettings
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+- uid: Klem.SocketChat.ChatSystem.SettingsScript
+  commentId: N:Klem.SocketChat.ChatSystem.SettingsScript
+  name: Klem.SocketChat.ChatSystem.SettingsScript
+  nameWithType: Klem.SocketChat.ChatSystem.SettingsScript
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.SettingsScript
+    name: SettingsScript
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.SettingsScript
+    name: SettingsScript

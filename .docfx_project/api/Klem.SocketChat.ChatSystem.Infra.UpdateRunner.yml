@@ -1,0 +1,141 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.Infra.UpdateRunner
+  commentId: T:Klem.SocketChat.ChatSystem.Infra.UpdateRunner
+  id: UpdateRunner
+  parent: Klem.SocketChat.ChatSystem.Infra
+  children:
+  - Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Subscribe(System.Action)
+  - Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Unsubscribe(System.Action)
+  langs:
+  - csharp
+  - vb
+  name: UpdateRunner
+  nameWithType: UpdateRunner
+  fullName: Klem.SocketChat.ChatSystem.Infra.UpdateRunner
+  type: Class
+  source:
+    id: UpdateRunner
+    path: ''
+    startLine: 1631
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Infra
+  syntax:
+    content: 'public class UpdateRunner : MonoBehaviour'
+    content.vb: Public Class UpdateRunner Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Subscribe(System.Action)
+  commentId: M:Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Subscribe(System.Action)
+  id: Subscribe(System.Action)
+  parent: Klem.SocketChat.ChatSystem.Infra.UpdateRunner
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(Action)
+  nameWithType: UpdateRunner.Subscribe(Action)
+  fullName: Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Subscribe(System.Action)
+  type: Method
+  source:
+    id: Subscribe
+    path: ''
+    startLine: 1663
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Infra
+  syntax:
+    content: public void Subscribe(Action onUpdate)
+    parameters:
+    - id: onUpdate
+      type: System.Action
+    content.vb: Public Sub Subscribe(onUpdate As Action)
+  overload: Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Subscribe*
+- uid: Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Unsubscribe(System.Action)
+  commentId: M:Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Unsubscribe(System.Action)
+  id: Unsubscribe(System.Action)
+  parent: Klem.SocketChat.ChatSystem.Infra.UpdateRunner
+  langs:
+  - csharp
+  - vb
+  name: Unsubscribe(Action)
+  nameWithType: UpdateRunner.Unsubscribe(Action)
+  fullName: Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Unsubscribe(System.Action)
+  type: Method
+  source:
+    id: Unsubscribe
+    path: ''
+    startLine: 1678
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Infra
+  syntax:
+    content: public void Unsubscribe(Action onUpdate)
+    parameters:
+    - id: onUpdate
+      type: System.Action
+    content.vb: Public Sub Unsubscribe(onUpdate As Action)
+  overload: Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Unsubscribe*
+references:
+- uid: Klem.SocketChat.ChatSystem.Infra
+  commentId: N:Klem.SocketChat.ChatSystem.Infra
+  name: Klem.SocketChat.ChatSystem.Infra
+  nameWithType: Klem.SocketChat.ChatSystem.Infra
+  fullName: Klem.SocketChat.ChatSystem.Infra
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Infra
+    name: Infra
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Infra
+    name: Infra
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Subscribe*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Subscribe
+  name: Subscribe
+  nameWithType: UpdateRunner.Subscribe
+  fullName: Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Subscribe
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Unsubscribe*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Unsubscribe
+  name: Unsubscribe
+  nameWithType: UpdateRunner.Unsubscribe
+  fullName: Klem.SocketChat.ChatSystem.Infra.UpdateRunner.Unsubscribe

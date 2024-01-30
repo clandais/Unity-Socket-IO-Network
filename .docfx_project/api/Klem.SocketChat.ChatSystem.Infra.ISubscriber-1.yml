@@ -1,0 +1,197 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.Infra.ISubscriber`1
+  commentId: T:Klem.SocketChat.ChatSystem.Infra.ISubscriber`1
+  id: ISubscriber`1
+  parent: Klem.SocketChat.ChatSystem.Infra
+  children:
+  - Klem.SocketChat.ChatSystem.Infra.ISubscriber`1.Subscribe(System.Action{`0})
+  - Klem.SocketChat.ChatSystem.Infra.ISubscriber`1.Unsubscribe(System.Action{`0})
+  langs:
+  - csharp
+  - vb
+  name: ISubscriber<T>
+  nameWithType: ISubscriber<T>
+  fullName: Klem.SocketChat.ChatSystem.Infra.ISubscriber<T>
+  type: Interface
+  source:
+    id: ISubscriber
+    path: ''
+    startLine: 1511
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Infra
+  syntax:
+    content: public interface ISubscriber<out T>
+    typeParameters:
+    - id: T
+    content.vb: Public Interface ISubscriber(Of Out T)
+  nameWithType.vb: ISubscriber(Of T)
+  fullName.vb: Klem.SocketChat.ChatSystem.Infra.ISubscriber(Of T)
+  name.vb: ISubscriber(Of T)
+- uid: Klem.SocketChat.ChatSystem.Infra.ISubscriber`1.Subscribe(System.Action{`0})
+  commentId: M:Klem.SocketChat.ChatSystem.Infra.ISubscriber`1.Subscribe(System.Action{`0})
+  id: Subscribe(System.Action{`0})
+  parent: Klem.SocketChat.ChatSystem.Infra.ISubscriber`1
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(Action<T>)
+  nameWithType: ISubscriber<T>.Subscribe(Action<T>)
+  fullName: Klem.SocketChat.ChatSystem.Infra.ISubscriber<T>.Subscribe(System.Action<T>)
+  type: Method
+  source:
+    id: Subscribe
+    path: ''
+    startLine: 1513
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Infra
+  syntax:
+    content: IDisposable Subscribe(Action<out T> handler)
+    parameters:
+    - id: handler
+      type: System.Action{{T}}
+    return:
+      type: System.IDisposable
+    content.vb: Function Subscribe(handler As Action(Of Out T)) As IDisposable
+  overload: Klem.SocketChat.ChatSystem.Infra.ISubscriber`1.Subscribe*
+  nameWithType.vb: ISubscriber(Of T).Subscribe(Action(Of T))
+  fullName.vb: Klem.SocketChat.ChatSystem.Infra.ISubscriber(Of T).Subscribe(System.Action(Of T))
+  name.vb: Subscribe(Action(Of T))
+- uid: Klem.SocketChat.ChatSystem.Infra.ISubscriber`1.Unsubscribe(System.Action{`0})
+  commentId: M:Klem.SocketChat.ChatSystem.Infra.ISubscriber`1.Unsubscribe(System.Action{`0})
+  id: Unsubscribe(System.Action{`0})
+  parent: Klem.SocketChat.ChatSystem.Infra.ISubscriber`1
+  langs:
+  - csharp
+  - vb
+  name: Unsubscribe(Action<T>)
+  nameWithType: ISubscriber<T>.Unsubscribe(Action<T>)
+  fullName: Klem.SocketChat.ChatSystem.Infra.ISubscriber<T>.Unsubscribe(System.Action<T>)
+  type: Method
+  source:
+    id: Unsubscribe
+    path: ''
+    startLine: 1514
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Infra
+  syntax:
+    content: void Unsubscribe(Action<out T> handler)
+    parameters:
+    - id: handler
+      type: System.Action{{T}}
+    content.vb: Sub Unsubscribe(handler As Action(Of Out T))
+  overload: Klem.SocketChat.ChatSystem.Infra.ISubscriber`1.Unsubscribe*
+  nameWithType.vb: ISubscriber(Of T).Unsubscribe(Action(Of T))
+  fullName.vb: Klem.SocketChat.ChatSystem.Infra.ISubscriber(Of T).Unsubscribe(System.Action(Of T))
+  name.vb: Unsubscribe(Action(Of T))
+references:
+- uid: Klem.SocketChat.ChatSystem.Infra
+  commentId: N:Klem.SocketChat.ChatSystem.Infra
+  name: Klem.SocketChat.ChatSystem.Infra
+  nameWithType: Klem.SocketChat.ChatSystem.Infra
+  fullName: Klem.SocketChat.ChatSystem.Infra
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Infra
+    name: Infra
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Infra
+    name: Infra
+- uid: Klem.SocketChat.ChatSystem.Infra.ISubscriber`1.Subscribe*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Infra.ISubscriber`1.Subscribe
+  name: Subscribe
+  nameWithType: ISubscriber<T>.Subscribe
+  fullName: Klem.SocketChat.ChatSystem.Infra.ISubscriber<T>.Subscribe
+  nameWithType.vb: ISubscriber(Of T).Subscribe
+  fullName.vb: Klem.SocketChat.ChatSystem.Infra.ISubscriber(Of T).Subscribe
+- uid: System.Action{{T}}
+  commentId: T:System.Action{`0}
+  parent: System
+  definition: System.Action`1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Klem.SocketChat.ChatSystem.Infra.ISubscriber`1.Unsubscribe*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Infra.ISubscriber`1.Unsubscribe
+  name: Unsubscribe
+  nameWithType: ISubscriber<T>.Unsubscribe
+  fullName: Klem.SocketChat.ChatSystem.Infra.ISubscriber<T>.Unsubscribe
+  nameWithType.vb: ISubscriber(Of T).Unsubscribe
+  fullName.vb: Klem.SocketChat.ChatSystem.Infra.ISubscriber(Of T).Unsubscribe

@@ -1,0 +1,79 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.SimpleChatSample.Utils.TMPTextLinkHandler.OnLinkClicked
+  commentId: T:Klem.SocketChat.ChatSystem.SimpleChatSample.Utils.TMPTextLinkHandler.OnLinkClicked
+  id: TMPTextLinkHandler.OnLinkClicked
+  parent: Klem.SocketChat.ChatSystem.SimpleChatSample.Utils
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: TMPTextLinkHandler.OnLinkClicked
+  nameWithType: TMPTextLinkHandler.OnLinkClicked
+  fullName: Klem.SocketChat.ChatSystem.SimpleChatSample.Utils.TMPTextLinkHandler.OnLinkClicked
+  type: Delegate
+  source:
+    id: OnLinkClicked
+    path: ''
+    startLine: 7094
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.SimpleChatSample.Utils
+  syntax:
+    content: public delegate void TMPTextLinkHandler.OnLinkClicked(string linkId)
+    parameters:
+    - id: linkId
+      type: System.String
+    content.vb: Public Delegate Sub TMPTextLinkHandler.OnLinkClicked(linkId As String)
+references:
+- uid: Klem.SocketChat.ChatSystem.SimpleChatSample.Utils
+  commentId: N:Klem.SocketChat.ChatSystem.SimpleChatSample.Utils
+  name: Klem.SocketChat.ChatSystem.SimpleChatSample.Utils
+  nameWithType: Klem.SocketChat.ChatSystem.SimpleChatSample.Utils
+  fullName: Klem.SocketChat.ChatSystem.SimpleChatSample.Utils
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.SimpleChatSample
+    name: SimpleChatSample
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.SimpleChatSample.Utils
+    name: Utils
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.SimpleChatSample
+    name: SimpleChatSample
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.SimpleChatSample.Utils
+    name: Utils
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

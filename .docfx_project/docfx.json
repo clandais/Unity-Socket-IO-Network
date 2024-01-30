@@ -1,0 +1,87 @@
+{
+    "metadata": [
+        {
+            "src": [
+                {
+                    "src": "..",
+                    "files": [
+                        "Assets/**/*.cs"
+                    ],
+                    "exclude": [
+                        "Assets/Plugins/**",
+                        "Assets/Photon/**",
+                        "Assets/ChatSystem/Runtime/Libs/**",
+                        "Assets/ChatSystem/Samples/**",
+                        "Assets/ChatSystem/Samples~/**"
+                    ]
+                }
+            ],
+            "globalNamespaceId": "Global",
+            "dest": "api",
+            "filter": "filterConfig.yml"
+        }
+    ],
+    "build": {
+
+        "globalMetadata": {
+            "_appTitle": "SocketChat Documentation",
+            "_appFooter": "SocketChat Documentation",
+            "_enableSearch": true
+        },
+
+        "content": [
+            {
+                "files": [
+                    "toc.yml",
+                    "index.md"
+                ]
+            },
+            {
+                "src": "api",
+                "files": [
+                    "*.yml"
+                ],
+                "dest": "api"
+            },
+            {
+                "src": "manual",
+                "files": [
+                    "toc.yml",
+                    "*.md"
+                ],
+                "dest": "manual"
+            }
+        ],
+        "resource": [
+            {
+                "files": [
+                    "resources/**/*"
+                ]
+            }
+        ],
+        "overwrite": [
+            {
+                "src": "..",
+                "files": [
+                    "Assets/ChatSystem/**/*.md"
+                ]
+            }
+        ],
+        "sitemap": {
+            "baseUrl": "https://normanderwan.github.io/DocFxForUnity",
+            "changefreq": "weekly",
+            "fileOptions": {
+                "api/*": {
+                    "changefreq": "daily"
+                }
+            }
+        },
+        "xref": [
+            "https://normanderwan.github.io/UnityXrefMaps/xrefmap.yml"
+        ],
+        "xrefService": [
+            "https://xref.docs.microsoft.com/query?uid={uid}"
+        ],
+        "dest": "../_site"
+    }
+}

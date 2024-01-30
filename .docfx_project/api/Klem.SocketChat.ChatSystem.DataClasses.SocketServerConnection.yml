@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+  commentId: T:Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+  id: SocketServerConnection
+  parent: Klem.SocketChat.ChatSystem.DataClasses
+  children:
+  - Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.ChatId
+  - Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.Date
+  - Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.GetDate
+  langs:
+  - csharp
+  - vb
+  name: SocketServerConnection
+  nameWithType: SocketServerConnection
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+  type: Class
+  source:
+    id: SocketServerConnection
+    path: ''
+    startLine: 1256
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class SocketServerConnection
+    content.vb: >-
+      <Serializable>
+
+      Public Class SocketServerConnection
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.Date
+  commentId: F:Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.Date
+  id: Date
+  parent: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+  langs:
+  - csharp
+  - vb
+  name: Date
+  nameWithType: SocketServerConnection.Date
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.Date
+  type: Field
+  source:
+    id: Date
+    path: ''
+    startLine: 1259
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  syntax:
+    content: public float Date
+    return:
+      type: System.Single
+    content.vb: Public [Date] As Single
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.ChatId
+  commentId: F:Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.ChatId
+  id: ChatId
+  parent: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+  langs:
+  - csharp
+  - vb
+  name: ChatId
+  nameWithType: SocketServerConnection.ChatId
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.ChatId
+  type: Field
+  source:
+    id: ChatId
+    path: ''
+    startLine: 1260
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  syntax:
+    content: public string ChatId
+    return:
+      type: System.String
+    content.vb: Public ChatId As String
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.GetDate
+  commentId: M:Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.GetDate
+  id: GetDate
+  parent: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+  langs:
+  - csharp
+  - vb
+  name: GetDate()
+  nameWithType: SocketServerConnection.GetDate()
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.GetDate()
+  type: Method
+  source:
+    id: GetDate
+    path: ''
+    startLine: 1268
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  summary: "\nReturns the date of the connection as a TimeSpan.\n"
+  example: []
+  syntax:
+    content: public TimeSpan GetDate()
+    return:
+      type: System.TimeSpan
+      description: "\nThe date of the connection as a TimeSpan.\n"
+    content.vb: Public Function GetDate() As TimeSpan
+  overload: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.GetDate*
+references:
+- uid: Klem.SocketChat.ChatSystem.DataClasses
+  commentId: N:Klem.SocketChat.ChatSystem.DataClasses
+  name: Klem.SocketChat.ChatSystem.DataClasses
+  nameWithType: Klem.SocketChat.ChatSystem.DataClasses
+  fullName: Klem.SocketChat.ChatSystem.DataClasses
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.GetDate*
+  commentId: Overload:Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.GetDate
+  name: GetDate
+  nameWithType: SocketServerConnection.GetDate
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection.GetDate
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan

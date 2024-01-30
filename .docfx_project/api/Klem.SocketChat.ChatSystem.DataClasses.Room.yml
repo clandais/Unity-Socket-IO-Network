@@ -1,0 +1,259 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.DataClasses.Room
+  commentId: T:Klem.SocketChat.ChatSystem.DataClasses.Room
+  id: Room
+  parent: Klem.SocketChat.ChatSystem.DataClasses
+  children:
+  - Klem.SocketChat.ChatSystem.DataClasses.Room.#ctor(System.String,System.Int32,System.Int32,Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser[])
+  - Klem.SocketChat.ChatSystem.DataClasses.Room.MaxPlayers
+  - Klem.SocketChat.ChatSystem.DataClasses.Room.Name
+  - Klem.SocketChat.ChatSystem.DataClasses.Room.PlayerCount
+  - Klem.SocketChat.ChatSystem.DataClasses.Room.Players
+  langs:
+  - csharp
+  - vb
+  name: Room
+  nameWithType: Room
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.Room
+  type: Class
+  source:
+    id: Room
+    path: ''
+    startLine: 1211
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Room
+    content.vb: >-
+      <Serializable>
+
+      Public Class Room
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Klem.SocketChat.ChatSystem.DataClasses.Room.Name
+  commentId: F:Klem.SocketChat.ChatSystem.DataClasses.Room.Name
+  id: Name
+  parent: Klem.SocketChat.ChatSystem.DataClasses.Room
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Room.Name
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.Room.Name
+  type: Field
+  source:
+    id: Name
+    path: ''
+    startLine: 1214
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  syntax:
+    content: public string Name
+    return:
+      type: System.String
+    content.vb: Public Name As String
+- uid: Klem.SocketChat.ChatSystem.DataClasses.Room.MaxPlayers
+  commentId: F:Klem.SocketChat.ChatSystem.DataClasses.Room.MaxPlayers
+  id: MaxPlayers
+  parent: Klem.SocketChat.ChatSystem.DataClasses.Room
+  langs:
+  - csharp
+  - vb
+  name: MaxPlayers
+  nameWithType: Room.MaxPlayers
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.Room.MaxPlayers
+  type: Field
+  source:
+    id: MaxPlayers
+    path: ''
+    startLine: 1215
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  syntax:
+    content: public int MaxPlayers
+    return:
+      type: System.Int32
+    content.vb: Public MaxPlayers As Integer
+- uid: Klem.SocketChat.ChatSystem.DataClasses.Room.PlayerCount
+  commentId: F:Klem.SocketChat.ChatSystem.DataClasses.Room.PlayerCount
+  id: PlayerCount
+  parent: Klem.SocketChat.ChatSystem.DataClasses.Room
+  langs:
+  - csharp
+  - vb
+  name: PlayerCount
+  nameWithType: Room.PlayerCount
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.Room.PlayerCount
+  type: Field
+  source:
+    id: PlayerCount
+    path: ''
+    startLine: 1216
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  syntax:
+    content: public int PlayerCount
+    return:
+      type: System.Int32
+    content.vb: Public PlayerCount As Integer
+- uid: Klem.SocketChat.ChatSystem.DataClasses.Room.Players
+  commentId: F:Klem.SocketChat.ChatSystem.DataClasses.Room.Players
+  id: Players
+  parent: Klem.SocketChat.ChatSystem.DataClasses.Room
+  langs:
+  - csharp
+  - vb
+  name: Players
+  nameWithType: Room.Players
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.Room.Players
+  type: Field
+  source:
+    id: Players
+    path: ''
+    startLine: 1217
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  syntax:
+    content: public SocketIOUser[] Players
+    return:
+      type: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser[]
+    content.vb: Public Players As SocketIOUser()
+- uid: Klem.SocketChat.ChatSystem.DataClasses.Room.#ctor(System.String,System.Int32,System.Int32,Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser[])
+  commentId: M:Klem.SocketChat.ChatSystem.DataClasses.Room.#ctor(System.String,System.Int32,System.Int32,Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser[])
+  id: '#ctor(System.String,System.Int32,System.Int32,Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser[])'
+  parent: Klem.SocketChat.ChatSystem.DataClasses.Room
+  langs:
+  - csharp
+  - vb
+  name: Room(string, int, int, SocketIOUser[])
+  nameWithType: Room.Room(string, int, int, SocketIOUser[])
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.Room.Room(string, int, int, Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1219
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  syntax:
+    content: public Room(string name, int maxPlayers, int playerCount = 0, SocketIOUser[] players = null)
+    parameters:
+    - id: name
+      type: System.String
+    - id: maxPlayers
+      type: System.Int32
+    - id: playerCount
+      type: System.Int32
+    - id: players
+      type: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser[]
+    content.vb: Public Sub New(name As String, maxPlayers As Integer, playerCount As Integer = 0, players As SocketIOUser() = Nothing)
+  overload: Klem.SocketChat.ChatSystem.DataClasses.Room.#ctor*
+  nameWithType.vb: Room.New(String, Integer, Integer, SocketIOUser())
+  fullName.vb: Klem.SocketChat.ChatSystem.DataClasses.Room.New(String, Integer, Integer, Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser())
+  name.vb: New(String, Integer, Integer, SocketIOUser())
+references:
+- uid: Klem.SocketChat.ChatSystem.DataClasses
+  commentId: N:Klem.SocketChat.ChatSystem.DataClasses
+  name: Klem.SocketChat.ChatSystem.DataClasses
+  nameWithType: Klem.SocketChat.ChatSystem.DataClasses
+  fullName: Klem.SocketChat.ChatSystem.DataClasses
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser[]
+  isExternal: true
+  name: SocketIOUser[]
+  nameWithType: SocketIOUser[]
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser[]
+  nameWithType.vb: SocketIOUser()
+  fullName.vb: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser()
+  name.vb: SocketIOUser()
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+    name: SocketIOUser
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+    name: SocketIOUser
+  - name: (
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.DataClasses.Room.#ctor*
+  commentId: Overload:Klem.SocketChat.ChatSystem.DataClasses.Room.#ctor
+  name: Room
+  nameWithType: Room.Room
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.Room.Room
+  nameWithType.vb: Room.New
+  fullName.vb: Klem.SocketChat.ChatSystem.DataClasses.Room.New
+  name.vb: New

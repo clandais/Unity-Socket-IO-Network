@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.Debugging
+  commentId: N:Klem.SocketChat.ChatSystem.Debugging
+  id: Klem.SocketChat.ChatSystem.Debugging
+  children:
+  - Klem.SocketChat.ChatSystem.Debugging.StatesGui
+  langs:
+  - csharp
+  - vb
+  name: Klem.SocketChat.ChatSystem.Debugging
+  nameWithType: Klem.SocketChat.ChatSystem.Debugging
+  fullName: Klem.SocketChat.ChatSystem.Debugging
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Klem.SocketChat.ChatSystem.Debugging.StatesGui
+  commentId: T:Klem.SocketChat.ChatSystem.Debugging.StatesGui
+  name: StatesGui
+  nameWithType: StatesGui
+  fullName: Klem.SocketChat.ChatSystem.Debugging.StatesGui

@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer
+  commentId: T:Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer
+  id: ICallbacksContainer
+  parent: Klem.SocketChat.ChatSystem.Interfaces
+  children:
+  - Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.AddCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  - Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.RemoveCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  langs:
+  - csharp
+  - vb
+  name: ICallbacksContainer
+  nameWithType: ICallbacksContainer
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer
+  type: Interface
+  source:
+    id: ICallbacksContainer
+    path: ''
+    startLine: 1702
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: public interface ICallbacksContainer
+    content.vb: Public Interface ICallbacksContainer
+- uid: Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.AddCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  commentId: M:Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.AddCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  id: AddCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  parent: Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer
+  langs:
+  - csharp
+  - vb
+  name: AddCallbackTarget(MonoBehaviourSocketCallBacks)
+  nameWithType: ICallbacksContainer.AddCallbackTarget(MonoBehaviourSocketCallBacks)
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.AddCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  type: Method
+  source:
+    id: AddCallbackTarget
+    path: ''
+    startLine: 1704
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: void AddCallbackTarget(MonoBehaviourSocketCallBacks target)
+    parameters:
+    - id: target
+      type: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+    content.vb: Sub AddCallbackTarget(target As MonoBehaviourSocketCallBacks)
+  overload: Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.AddCallbackTarget*
+- uid: Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.RemoveCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  commentId: M:Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.RemoveCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  id: RemoveCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  parent: Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer
+  langs:
+  - csharp
+  - vb
+  name: RemoveCallbackTarget(MonoBehaviourSocketCallBacks)
+  nameWithType: ICallbacksContainer.RemoveCallbackTarget(MonoBehaviourSocketCallBacks)
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.RemoveCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  type: Method
+  source:
+    id: RemoveCallbackTarget
+    path: ''
+    startLine: 1705
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: void RemoveCallbackTarget(MonoBehaviourSocketCallBacks target)
+    parameters:
+    - id: target
+      type: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+    content.vb: Sub RemoveCallbackTarget(target As MonoBehaviourSocketCallBacks)
+  overload: Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.RemoveCallbackTarget*
+references:
+- uid: Klem.SocketChat.ChatSystem.Interfaces
+  commentId: N:Klem.SocketChat.ChatSystem.Interfaces
+  name: Klem.SocketChat.ChatSystem.Interfaces
+  nameWithType: Klem.SocketChat.ChatSystem.Interfaces
+  fullName: Klem.SocketChat.ChatSystem.Interfaces
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Interfaces
+    name: Interfaces
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Interfaces
+    name: Interfaces
+- uid: Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.AddCallbackTarget*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.AddCallbackTarget
+  name: AddCallbackTarget
+  nameWithType: ICallbacksContainer.AddCallbackTarget
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.AddCallbackTarget
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  commentId: T:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  parent: Klem.SocketChat.ChatSystem
+  name: MonoBehaviourSocketCallBacks
+  nameWithType: MonoBehaviourSocketCallBacks
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+- uid: Klem.SocketChat.ChatSystem
+  commentId: N:Klem.SocketChat.ChatSystem
+  name: Klem.SocketChat.ChatSystem
+  nameWithType: Klem.SocketChat.ChatSystem
+  fullName: Klem.SocketChat.ChatSystem
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+- uid: Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.RemoveCallbackTarget*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.RemoveCallbackTarget
+  name: RemoveCallbackTarget
+  nameWithType: ICallbacksContainer.RemoveCallbackTarget
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer.RemoveCallbackTarget

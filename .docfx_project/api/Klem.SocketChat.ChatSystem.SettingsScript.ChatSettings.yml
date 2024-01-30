@@ -1,0 +1,409 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  commentId: T:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  id: ChatSettings
+  parent: Klem.SocketChat.ChatSystem.SettingsScript
+  children:
+  - Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.EnableLogging
+  - Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.Instance
+  - Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerMessageColor
+  - Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerPort
+  - Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerToken
+  - Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerUri
+  - Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserColors
+  - Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserMessageColor
+  langs:
+  - csharp
+  - vb
+  name: ChatSettings
+  nameWithType: ChatSettings
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  type: Class
+  source:
+    id: ChatSettings
+    path: ''
+    startLine: 1760
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.SettingsScript
+  summary: "\nThis class is a ScriptableObject that contains the settings for the Chat System.\n"
+  example: []
+  syntax:
+    content: 'public class ChatSettings : ScriptableObject'
+    content.vb: Public Class ChatSettings Inherits ScriptableObject
+  inheritance:
+  - System.Object
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.Instance
+  commentId: P:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.Instance
+  id: Instance
+  parent: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: ChatSettings.Instance
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.Instance
+  type: Property
+  source:
+    id: Instance
+    path: ''
+    startLine: 1764
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.SettingsScript
+  syntax:
+    content: public static ChatSettings Instance { get; }
+    parameters: []
+    return:
+      type: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+    content.vb: Public Shared ReadOnly Property Instance As ChatSettings
+  overload: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.Instance*
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerUri
+  commentId: P:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerUri
+  id: ServerUri
+  parent: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  langs:
+  - csharp
+  - vb
+  name: ServerUri
+  nameWithType: ChatSettings.ServerUri
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerUri
+  type: Property
+  source:
+    id: ServerUri
+    path: ''
+    startLine: 1788
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.SettingsScript
+  syntax:
+    content: public string ServerUri { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ServerUri As String
+  overload: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerUri*
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerPort
+  commentId: P:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerPort
+  id: ServerPort
+  parent: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  langs:
+  - csharp
+  - vb
+  name: ServerPort
+  nameWithType: ChatSettings.ServerPort
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerPort
+  type: Property
+  source:
+    id: ServerPort
+    path: ''
+    startLine: 1789
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.SettingsScript
+  syntax:
+    content: public string ServerPort { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ServerPort As String
+  overload: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerPort*
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerToken
+  commentId: P:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerToken
+  id: ServerToken
+  parent: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  langs:
+  - csharp
+  - vb
+  name: ServerToken
+  nameWithType: ChatSettings.ServerToken
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerToken
+  type: Property
+  source:
+    id: ServerToken
+    path: ''
+    startLine: 1790
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.SettingsScript
+  syntax:
+    content: public string ServerToken { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ServerToken As String
+  overload: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerToken*
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.EnableLogging
+  commentId: P:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.EnableLogging
+  id: EnableLogging
+  parent: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  langs:
+  - csharp
+  - vb
+  name: EnableLogging
+  nameWithType: ChatSettings.EnableLogging
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.EnableLogging
+  type: Property
+  source:
+    id: EnableLogging
+    path: ''
+    startLine: 1794
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.SettingsScript
+  summary: "\nIf true, the Chat System will log all the messages in the console.\n"
+  example: []
+  syntax:
+    content: public bool EnableLogging { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property EnableLogging As Boolean
+  overload: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.EnableLogging*
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerMessageColor
+  commentId: P:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerMessageColor
+  id: ServerMessageColor
+  parent: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  langs:
+  - csharp
+  - vb
+  name: ServerMessageColor
+  nameWithType: ChatSettings.ServerMessageColor
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerMessageColor
+  type: Property
+  source:
+    id: ServerMessageColor
+    path: ''
+    startLine: 1796
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.SettingsScript
+  syntax:
+    content: public Color ServerMessageColor { get; }
+    parameters: []
+    return:
+      type: Global.Color
+    content.vb: Public Property ServerMessageColor As Color
+  overload: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerMessageColor*
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserMessageColor
+  commentId: P:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserMessageColor
+  id: UserMessageColor
+  parent: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  langs:
+  - csharp
+  - vb
+  name: UserMessageColor
+  nameWithType: ChatSettings.UserMessageColor
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserMessageColor
+  type: Property
+  source:
+    id: UserMessageColor
+    path: ''
+    startLine: 1797
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.SettingsScript
+  syntax:
+    content: public Color UserMessageColor { get; }
+    parameters: []
+    return:
+      type: Global.Color
+    content.vb: Public Property UserMessageColor As Color
+  overload: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserMessageColor*
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserColors
+  commentId: P:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserColors
+  id: UserColors
+  parent: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  langs:
+  - csharp
+  - vb
+  name: UserColors
+  nameWithType: ChatSettings.UserColors
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserColors
+  type: Property
+  source:
+    id: UserColors
+    path: ''
+    startLine: 1799
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.SettingsScript
+  syntax:
+    content: public List<Color> UserColors { get; }
+    parameters: []
+    return:
+      type: Global.List{Color}
+    content.vb: Public Property UserColors As List(Of Color)
+  overload: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserColors*
+references:
+- uid: Klem.SocketChat.ChatSystem.SettingsScript
+  commentId: N:Klem.SocketChat.ChatSystem.SettingsScript
+  name: Klem.SocketChat.ChatSystem.SettingsScript
+  nameWithType: Klem.SocketChat.ChatSystem.SettingsScript
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.SettingsScript
+    name: SettingsScript
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.SettingsScript
+    name: SettingsScript
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.Instance*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.Instance
+  name: Instance
+  nameWithType: ChatSettings.Instance
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.Instance
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  commentId: T:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  parent: Klem.SocketChat.ChatSystem.SettingsScript
+  name: ChatSettings
+  nameWithType: ChatSettings
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerUri*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerUri
+  name: ServerUri
+  nameWithType: ChatSettings.ServerUri
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerUri
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerPort*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerPort
+  name: ServerPort
+  nameWithType: ChatSettings.ServerPort
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerPort
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerToken*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerToken
+  name: ServerToken
+  nameWithType: ChatSettings.ServerToken
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerToken
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.EnableLogging*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.EnableLogging
+  name: EnableLogging
+  nameWithType: ChatSettings.EnableLogging
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.EnableLogging
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerMessageColor*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerMessageColor
+  name: ServerMessageColor
+  nameWithType: ChatSettings.ServerMessageColor
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.ServerMessageColor
+- uid: Global.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Color
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserMessageColor*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserMessageColor
+  name: UserMessageColor
+  nameWithType: ChatSettings.UserMessageColor
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserMessageColor
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserColors*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserColors
+  name: UserColors
+  nameWithType: ChatSettings.UserColors
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings.UserColors
+- uid: Global.List{Color}
+  commentId: '!:Global.List{Color}'
+  definition: Global.List`1
+  name: List<Color>
+  nameWithType: List<Color>
+  fullName: List<Color>
+  nameWithType.vb: List(Of Color)
+  fullName.vb: List(Of Color)
+  name.vb: List(Of Color)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.Color
+    name: Color
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Color
+    name: Color
+    isExternal: true
+  - name: )
+- uid: Global.List`1
+  commentId: '!:Global.List`1'
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )

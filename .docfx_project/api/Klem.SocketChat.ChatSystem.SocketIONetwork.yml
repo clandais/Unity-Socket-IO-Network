@@ -1,0 +1,953 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork
+  commentId: T:Klem.SocketChat.ChatSystem.SocketIONetwork
+  id: SocketIONetwork
+  parent: Klem.SocketChat.ChatSystem
+  children:
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.AddCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.Connect
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.CreateRoom(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.CurrentRoom
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.Disconnect
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms(System.Boolean)
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.GetChatUser(System.String)
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.InRoom
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.IsConnected
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRoom(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.LeaveRoom
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.ListIds(System.Boolean)
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.RemoveCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.SendGeneralChatMessage(System.String)
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.SendInvite(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.SendRoomChatMessage(System.String)
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.TimeSpanSinceLastPing
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.Uri
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.User
+  langs:
+  - csharp
+  - vb
+  name: SocketIONetwork
+  nameWithType: SocketIONetwork
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork
+  type: Class
+  source:
+    id: SocketIONetwork
+    path: ''
+    startLine: 313
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  syntax:
+    content: public static class SocketIONetwork
+    content.vb: Public Module SocketIONetwork
+  inheritance:
+  - System.Object
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.IsConnected
+  commentId: P:Klem.SocketChat.ChatSystem.SocketIONetwork.IsConnected
+  id: IsConnected
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: IsConnected
+  nameWithType: SocketIONetwork.IsConnected
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.IsConnected
+  type: Property
+  source:
+    id: IsConnected
+    path: ''
+    startLine: 226
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  syntax:
+    content: public static bool IsConnected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property IsConnected As Boolean
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.IsConnected*
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.InRoom
+  commentId: P:Klem.SocketChat.ChatSystem.SocketIONetwork.InRoom
+  id: InRoom
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: InRoom
+  nameWithType: SocketIONetwork.InRoom
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.InRoom
+  type: Property
+  source:
+    id: InRoom
+    path: ''
+    startLine: 227
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  syntax:
+    content: public static bool InRoom { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property InRoom As Boolean
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.InRoom*
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.User
+  commentId: P:Klem.SocketChat.ChatSystem.SocketIONetwork.User
+  id: User
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: SocketIONetwork.User
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.User
+  type: Property
+  source:
+    id: User
+    path: ''
+    startLine: 229
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  syntax:
+    content: public static SocketIOUser User { get; }
+    parameters: []
+    return:
+      type: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+    content.vb: Public Shared Property User As SocketIOUser
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.User*
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.CurrentRoom
+  commentId: P:Klem.SocketChat.ChatSystem.SocketIONetwork.CurrentRoom
+  id: CurrentRoom
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: CurrentRoom
+  nameWithType: SocketIONetwork.CurrentRoom
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.CurrentRoom
+  type: Property
+  source:
+    id: CurrentRoom
+    path: ''
+    startLine: 232
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  syntax:
+    content: public static Room CurrentRoom { get; set; }
+    parameters: []
+    return:
+      type: Klem.SocketChat.ChatSystem.DataClasses.Room
+    content.vb: Public Shared Property CurrentRoom As Room
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.CurrentRoom*
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.TimeSpanSinceLastPing
+  commentId: P:Klem.SocketChat.ChatSystem.SocketIONetwork.TimeSpanSinceLastPing
+  id: TimeSpanSinceLastPing
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: TimeSpanSinceLastPing
+  nameWithType: SocketIONetwork.TimeSpanSinceLastPing
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.TimeSpanSinceLastPing
+  type: Property
+  source:
+    id: TimeSpanSinceLastPing
+    path: ''
+    startLine: 244
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  syntax:
+    content: public static TimeSpan TimeSpanSinceLastPing { get; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Shared Property TimeSpanSinceLastPing As TimeSpan
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.TimeSpanSinceLastPing*
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.Uri
+  commentId: P:Klem.SocketChat.ChatSystem.SocketIONetwork.Uri
+  id: Uri
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: Uri
+  nameWithType: SocketIONetwork.Uri
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.Uri
+  type: Property
+  source:
+    id: Uri
+    path: ''
+    startLine: 246
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  syntax:
+    content: public static string Uri { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Uri As String
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.Uri*
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.AddCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.AddCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  id: AddCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: AddCallbackTarget(MonoBehaviourSocketCallBacks)
+  nameWithType: SocketIONetwork.AddCallbackTarget(MonoBehaviourSocketCallBacks)
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.AddCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  type: Method
+  source:
+    id: AddCallbackTarget
+    path: ''
+    startLine: 272
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  summary: "\nAdd a MonoBehaviourSocketCallBacks to the callback channels.<br />\n"
+  example: []
+  syntax:
+    content: public static void AddCallbackTarget(MonoBehaviourSocketCallBacks callbacks)
+    parameters:
+    - id: callbacks
+      type: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+      description: "\nThe MonoBehaviourSocketCallBacks to add to the callback channels.<br />\n"
+    content.vb: Public Shared Sub AddCallbackTarget(callbacks As MonoBehaviourSocketCallBacks)
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.AddCallbackTarget*
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.RemoveCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.RemoveCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  id: RemoveCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: RemoveCallbackTarget(MonoBehaviourSocketCallBacks)
+  nameWithType: SocketIONetwork.RemoveCallbackTarget(MonoBehaviourSocketCallBacks)
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.RemoveCallbackTarget(Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks)
+  type: Method
+  source:
+    id: RemoveCallbackTarget
+    path: ''
+    startLine: 294
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  summary: "\nRemove a MonoBehaviourSocketCallBacks from the callback channels.<br />\n"
+  example: []
+  syntax:
+    content: public static void RemoveCallbackTarget(MonoBehaviourSocketCallBacks monoBehaviourSocketCallBacks)
+    parameters:
+    - id: monoBehaviourSocketCallBacks
+      type: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+      description: "\nThe MonoBehaviourSocketCallBacks to remove from the callback channels.<br />\n"
+    content.vb: Public Shared Sub RemoveCallbackTarget(monoBehaviourSocketCallBacks As MonoBehaviourSocketCallBacks)
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.RemoveCallbackTarget*
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.Connect
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.Connect
+  id: Connect
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: Connect()
+  nameWithType: SocketIONetwork.Connect()
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.Connect()
+  type: Method
+  source:
+    id: Connect
+    path: ''
+    startLine: 328
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  summary: "\nConnect to the socket server using the settings provided in the ChatSettings ScriptableObject<br />\nIf the settings are not set, it will throw an exception. <br />\nIf the connection is successful, it will set the Socket property to the connected socket and setup the callbacks\nchannels.\n"
+  example: []
+  syntax:
+    content: public static Task Connect()
+    return:
+      type: Global.Task
+    content.vb: Public Shared Function Connect() As Task
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.Connect*
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.Disconnect
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.Disconnect
+  id: Disconnect
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: Disconnect()
+  nameWithType: SocketIONetwork.Disconnect()
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.Disconnect()
+  type: Method
+  source:
+    id: Disconnect
+    path: ''
+    startLine: 420
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  summary: "\nDisconnect from the socket server.<br />\n"
+  example: []
+  syntax:
+    content: public static void Disconnect()
+    content.vb: Public Shared Sub Disconnect()
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.Disconnect*
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.SendGeneralChatMessage(System.String)
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.SendGeneralChatMessage(System.String)
+  id: SendGeneralChatMessage(System.String)
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: SendGeneralChatMessage(string)
+  nameWithType: SocketIONetwork.SendGeneralChatMessage(string)
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.SendGeneralChatMessage(string)
+  type: Method
+  source:
+    id: SendGeneralChatMessage
+    path: ''
+    startLine: 445
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  summary: "\nSend a chat message to the server.<br />\n"
+  example: []
+  syntax:
+    content: public static Task SendGeneralChatMessage(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: "\nThe message to send.<br />\n"
+    return:
+      type: Global.Task
+    content.vb: Public Shared Function SendGeneralChatMessage(message As String) As Task
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.SendGeneralChatMessage*
+  nameWithType.vb: SocketIONetwork.SendGeneralChatMessage(String)
+  fullName.vb: Klem.SocketChat.ChatSystem.SocketIONetwork.SendGeneralChatMessage(String)
+  name.vb: SendGeneralChatMessage(String)
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.SendRoomChatMessage(System.String)
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.SendRoomChatMessage(System.String)
+  id: SendRoomChatMessage(System.String)
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: SendRoomChatMessage(string)
+  nameWithType: SocketIONetwork.SendRoomChatMessage(string)
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.SendRoomChatMessage(string)
+  type: Method
+  source:
+    id: SendRoomChatMessage
+    path: ''
+    startLine: 461
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  syntax:
+    content: public static Task SendRoomChatMessage(string arg0)
+    parameters:
+    - id: arg0
+      type: System.String
+    return:
+      type: Global.Task
+    content.vb: Public Shared Function SendRoomChatMessage(arg0 As String) As Task
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.SendRoomChatMessage*
+  nameWithType.vb: SocketIONetwork.SendRoomChatMessage(String)
+  fullName.vb: Klem.SocketChat.ChatSystem.SocketIONetwork.SendRoomChatMessage(String)
+  name.vb: SendRoomChatMessage(String)
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.ListIds(System.Boolean)
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.ListIds(System.Boolean)
+  id: ListIds(System.Boolean)
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: ListIds(bool)
+  nameWithType: SocketIONetwork.ListIds(bool)
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.ListIds(bool)
+  type: Method
+  source:
+    id: ListIds
+    path: ''
+    startLine: 475
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  syntax:
+    content: public static Task<SocketIOUser[]> ListIds(bool log = false)
+    parameters:
+    - id: log
+      type: System.Boolean
+    return:
+      type: Global.Task{Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser[]}
+    content.vb: Public Shared Function ListIds(log As Boolean = False) As Task(Of SocketIOUser())
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.ListIds*
+  nameWithType.vb: SocketIONetwork.ListIds(Boolean)
+  fullName.vb: Klem.SocketChat.ChatSystem.SocketIONetwork.ListIds(Boolean)
+  name.vb: ListIds(Boolean)
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.GetChatUser(System.String)
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.GetChatUser(System.String)
+  id: GetChatUser(System.String)
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: GetChatUser(string)
+  nameWithType: SocketIONetwork.GetChatUser(string)
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.GetChatUser(string)
+  type: Method
+  source:
+    id: GetChatUser
+    path: ''
+    startLine: 495
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  syntax:
+    content: public static Task<SocketIOUser> GetChatUser(string chatId)
+    parameters:
+    - id: chatId
+      type: System.String
+    return:
+      type: Global.Task{Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser}
+    content.vb: Public Shared Function GetChatUser(chatId As String) As Task(Of SocketIOUser)
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.GetChatUser*
+  nameWithType.vb: SocketIONetwork.GetChatUser(String)
+  fullName.vb: Klem.SocketChat.ChatSystem.SocketIONetwork.GetChatUser(String)
+  name.vb: GetChatUser(String)
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom
+  id: JoinRandomRoom
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: JoinRandomRoom()
+  nameWithType: SocketIONetwork.JoinRandomRoom()
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom()
+  type: Method
+  source:
+    id: JoinRandomRoom
+    path: ''
+    startLine: 504
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  syntax:
+    content: public static void JoinRandomRoom()
+    content.vb: Public Shared Sub JoinRandomRoom()
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom*
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRoom(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRoom(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  id: JoinRoom(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: JoinRoom(Room)
+  nameWithType: SocketIONetwork.JoinRoom(Room)
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRoom(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  type: Method
+  source:
+    id: JoinRoom
+    path: ''
+    startLine: 510
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  syntax:
+    content: public static void JoinRoom(Room room)
+    parameters:
+    - id: room
+      type: Klem.SocketChat.ChatSystem.DataClasses.Room
+    content.vb: Public Shared Sub JoinRoom(room As Room)
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRoom*
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.CreateRoom(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.CreateRoom(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  id: CreateRoom(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: CreateRoom(Room)
+  nameWithType: SocketIONetwork.CreateRoom(Room)
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.CreateRoom(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  type: Method
+  source:
+    id: CreateRoom
+    path: ''
+    startLine: 523
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  summary: "\nCreate a room on the server.<br />\n"
+  example: []
+  syntax:
+    content: public static void CreateRoom(Room room)
+    parameters:
+    - id: room
+      type: Klem.SocketChat.ChatSystem.DataClasses.Room
+      description: "\nThe room to create.<br />\n"
+    content.vb: Public Shared Sub CreateRoom(room As Room)
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.CreateRoom*
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.LeaveRoom
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.LeaveRoom
+  id: LeaveRoom
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: LeaveRoom()
+  nameWithType: SocketIONetwork.LeaveRoom()
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.LeaveRoom()
+  type: Method
+  source:
+    id: LeaveRoom
+    path: ''
+    startLine: 533
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  summary: "\nLeave the current room.<br />\n"
+  example: []
+  syntax:
+    content: public static Task LeaveRoom()
+    return:
+      type: Global.Task
+    content.vb: Public Shared Function LeaveRoom() As Task
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.LeaveRoom*
+  exceptions:
+  - type: System.NotImplementedException
+    commentId: T:System.NotImplementedException
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms(System.Boolean)
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms(System.Boolean)
+  id: GetAllRooms(System.Boolean)
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: GetAllRooms(bool)
+  nameWithType: SocketIONetwork.GetAllRooms(bool)
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms(bool)
+  type: Method
+  source:
+    id: GetAllRooms
+    path: ''
+    startLine: 548
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  summary: "\nGetAllRooms from the server.<br />\n"
+  example: []
+  syntax:
+    content: public static Task<Room[]> GetAllRooms(bool log = false)
+    parameters:
+    - id: log
+      type: System.Boolean
+    return:
+      type: Global.Task{Klem.SocketChat.ChatSystem.DataClasses.Room[]}
+      description: "\nThe list of rooms.<br />\n"
+    content.vb: Public Shared Function GetAllRooms(log As Boolean = False) As Task(Of Room())
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms*
+  nameWithType.vb: SocketIONetwork.GetAllRooms(Boolean)
+  fullName.vb: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms(Boolean)
+  name.vb: GetAllRooms(Boolean)
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  id: UpdateUser(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: UpdateUser(SocketIOUser)
+  nameWithType: SocketIONetwork.UpdateUser(SocketIOUser)
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  type: Method
+  source:
+    id: UpdateUser
+    path: ''
+    startLine: 572
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  syntax:
+    content: public static void UpdateUser(SocketIOUser user)
+    parameters:
+    - id: user
+      type: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+    content.vb: Public Shared Sub UpdateUser(user As SocketIOUser)
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser*
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.SendInvite(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.SendInvite(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  id: SendInvite(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: SendInvite(SocketIOUser)
+  nameWithType: SocketIONetwork.SendInvite(SocketIOUser)
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.SendInvite(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  type: Method
+  source:
+    id: SendInvite
+    path: ''
+    startLine: 823
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  syntax:
+    content: public static void SendInvite(SocketIOUser toUser)
+    parameters:
+    - id: toUser
+      type: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+    content.vb: Public Shared Sub SendInvite(toUser As SocketIOUser)
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.SendInvite*
+references:
+- uid: Klem.SocketChat.ChatSystem
+  commentId: N:Klem.SocketChat.ChatSystem
+  name: Klem.SocketChat.ChatSystem
+  nameWithType: Klem.SocketChat.ChatSystem
+  fullName: Klem.SocketChat.ChatSystem
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.IsConnected*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.IsConnected
+  name: IsConnected
+  nameWithType: SocketIONetwork.IsConnected
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.IsConnected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.InRoom*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.InRoom
+  name: InRoom
+  nameWithType: SocketIONetwork.InRoom
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.InRoom
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.User*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.User
+  name: User
+  nameWithType: SocketIONetwork.User
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.User
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+  commentId: T:Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+  parent: Klem.SocketChat.ChatSystem.DataClasses
+  name: SocketIOUser
+  nameWithType: SocketIOUser
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+- uid: Klem.SocketChat.ChatSystem.DataClasses
+  commentId: N:Klem.SocketChat.ChatSystem.DataClasses
+  name: Klem.SocketChat.ChatSystem.DataClasses
+  nameWithType: Klem.SocketChat.ChatSystem.DataClasses
+  fullName: Klem.SocketChat.ChatSystem.DataClasses
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.CurrentRoom*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.CurrentRoom
+  name: CurrentRoom
+  nameWithType: SocketIONetwork.CurrentRoom
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.CurrentRoom
+- uid: Klem.SocketChat.ChatSystem.DataClasses.Room
+  commentId: T:Klem.SocketChat.ChatSystem.DataClasses.Room
+  parent: Klem.SocketChat.ChatSystem.DataClasses
+  name: Room
+  nameWithType: Room
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.Room
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.TimeSpanSinceLastPing*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.TimeSpanSinceLastPing
+  name: TimeSpanSinceLastPing
+  nameWithType: SocketIONetwork.TimeSpanSinceLastPing
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.TimeSpanSinceLastPing
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.Uri*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.Uri
+  name: Uri
+  nameWithType: SocketIONetwork.Uri
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.Uri
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.AddCallbackTarget*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.AddCallbackTarget
+  name: AddCallbackTarget
+  nameWithType: SocketIONetwork.AddCallbackTarget
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.AddCallbackTarget
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  commentId: T:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  parent: Klem.SocketChat.ChatSystem
+  name: MonoBehaviourSocketCallBacks
+  nameWithType: MonoBehaviourSocketCallBacks
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.RemoveCallbackTarget*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.RemoveCallbackTarget
+  name: RemoveCallbackTarget
+  nameWithType: SocketIONetwork.RemoveCallbackTarget
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.RemoveCallbackTarget
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.Connect*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.Connect
+  name: Connect
+  nameWithType: SocketIONetwork.Connect
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.Connect
+- uid: Global.Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.Disconnect*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.Disconnect
+  name: Disconnect
+  nameWithType: SocketIONetwork.Disconnect
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.Disconnect
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.SendGeneralChatMessage*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.SendGeneralChatMessage
+  name: SendGeneralChatMessage
+  nameWithType: SocketIONetwork.SendGeneralChatMessage
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.SendGeneralChatMessage
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.SendRoomChatMessage*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.SendRoomChatMessage
+  name: SendRoomChatMessage
+  nameWithType: SocketIONetwork.SendRoomChatMessage
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.SendRoomChatMessage
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.ListIds*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.ListIds
+  name: ListIds
+  nameWithType: SocketIONetwork.ListIds
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.ListIds
+- uid: Global.Task{Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser[]}
+  commentId: '!:Global.Task{Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser[]}'
+  definition: Global.Task`1
+  name: Task<SocketIOUser[]>
+  nameWithType: Task<SocketIOUser[]>
+  fullName: Task<Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser[]>
+  nameWithType.vb: Task(Of SocketIOUser())
+  fullName.vb: Task(Of Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser())
+  name.vb: Task(Of SocketIOUser())
+  spec.csharp:
+  - uid: Global.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+    name: SocketIOUser
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: Global.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+    name: SocketIOUser
+  - name: (
+  - name: )
+  - name: )
+- uid: Global.Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Global.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: Global.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.GetChatUser*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.GetChatUser
+  name: GetChatUser
+  nameWithType: SocketIONetwork.GetChatUser
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.GetChatUser
+- uid: Global.Task{Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser}
+  commentId: '!:Global.Task{Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser}'
+  definition: Global.Task`1
+  name: Task<SocketIOUser>
+  nameWithType: Task<SocketIOUser>
+  fullName: Task<Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser>
+  nameWithType.vb: Task(Of SocketIOUser)
+  fullName.vb: Task(Of Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  name.vb: Task(Of SocketIOUser)
+  spec.csharp:
+  - uid: Global.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+    name: SocketIOUser
+  - name: '>'
+  spec.vb:
+  - uid: Global.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+    name: SocketIOUser
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom
+  name: JoinRandomRoom
+  nameWithType: SocketIONetwork.JoinRandomRoom
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRoom*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRoom
+  name: JoinRoom
+  nameWithType: SocketIONetwork.JoinRoom
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRoom
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.CreateRoom*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.CreateRoom
+  name: CreateRoom
+  nameWithType: SocketIONetwork.CreateRoom
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.CreateRoom
+- uid: System.NotImplementedException
+  commentId: T:System.NotImplementedException
+  isExternal: true
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.LeaveRoom*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.LeaveRoom
+  name: LeaveRoom
+  nameWithType: SocketIONetwork.LeaveRoom
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.LeaveRoom
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms
+  name: GetAllRooms
+  nameWithType: SocketIONetwork.GetAllRooms
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms
+- uid: Global.Task{Klem.SocketChat.ChatSystem.DataClasses.Room[]}
+  commentId: '!:Global.Task{Klem.SocketChat.ChatSystem.DataClasses.Room[]}'
+  definition: Global.Task`1
+  name: Task<Room[]>
+  nameWithType: Task<Room[]>
+  fullName: Task<Klem.SocketChat.ChatSystem.DataClasses.Room[]>
+  nameWithType.vb: Task(Of Room())
+  fullName.vb: Task(Of Klem.SocketChat.ChatSystem.DataClasses.Room())
+  name.vb: Task(Of Room())
+  spec.csharp:
+  - uid: Global.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.Room
+    name: Room
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: Global.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.Room
+    name: Room
+  - name: (
+  - name: )
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser
+  name: UpdateUser
+  nameWithType: SocketIONetwork.UpdateUser
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.SendInvite*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.SendInvite
+  name: SendInvite
+  nameWithType: SocketIONetwork.SendInvite
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.SendInvite

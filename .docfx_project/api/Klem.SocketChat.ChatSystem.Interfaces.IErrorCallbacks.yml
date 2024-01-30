@@ -1,0 +1,138 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks
+  commentId: T:Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks
+  id: IErrorCallbacks
+  parent: Klem.SocketChat.ChatSystem.Interfaces
+  children:
+  - Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnError(System.String)
+  - Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnServerErrorMessage(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IErrorCallbacks
+  nameWithType: IErrorCallbacks
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks
+  type: Interface
+  source:
+    id: IErrorCallbacks
+    path: ''
+    startLine: 1721
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: public interface IErrorCallbacks
+    content.vb: Public Interface IErrorCallbacks
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnServerErrorMessage(System.String)
+  commentId: M:Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnServerErrorMessage(System.String)
+  id: OnServerErrorMessage(System.String)
+  parent: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks
+  langs:
+  - csharp
+  - vb
+  name: OnServerErrorMessage(string)
+  nameWithType: IErrorCallbacks.OnServerErrorMessage(string)
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnServerErrorMessage(string)
+  type: Method
+  source:
+    id: OnServerErrorMessage
+    path: ''
+    startLine: 1723
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: void OnServerErrorMessage(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Sub OnServerErrorMessage(message As String)
+  overload: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnServerErrorMessage*
+  nameWithType.vb: IErrorCallbacks.OnServerErrorMessage(String)
+  fullName.vb: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnServerErrorMessage(String)
+  name.vb: OnServerErrorMessage(String)
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnError(System.String)
+  commentId: M:Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnError(System.String)
+  id: OnError(System.String)
+  parent: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks
+  langs:
+  - csharp
+  - vb
+  name: OnError(string)
+  nameWithType: IErrorCallbacks.OnError(string)
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnError(string)
+  type: Method
+  source:
+    id: OnError
+    path: ''
+    startLine: 1724
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: void OnError(string error)
+    parameters:
+    - id: error
+      type: System.String
+    content.vb: Sub OnError([error] As String)
+  overload: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnError*
+  nameWithType.vb: IErrorCallbacks.OnError(String)
+  fullName.vb: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnError(String)
+  name.vb: OnError(String)
+references:
+- uid: Klem.SocketChat.ChatSystem.Interfaces
+  commentId: N:Klem.SocketChat.ChatSystem.Interfaces
+  name: Klem.SocketChat.ChatSystem.Interfaces
+  nameWithType: Klem.SocketChat.ChatSystem.Interfaces
+  fullName: Klem.SocketChat.ChatSystem.Interfaces
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Interfaces
+    name: Interfaces
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Interfaces
+    name: Interfaces
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnServerErrorMessage*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnServerErrorMessage
+  name: OnServerErrorMessage
+  nameWithType: IErrorCallbacks.OnServerErrorMessage
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnServerErrorMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnError*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnError
+  name: OnError
+  nameWithType: IErrorCallbacks.OnError
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks.OnError

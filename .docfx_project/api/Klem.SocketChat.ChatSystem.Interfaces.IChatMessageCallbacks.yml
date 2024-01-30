@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks
+  commentId: T:Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks
+  id: IChatMessageCallbacks
+  parent: Klem.SocketChat.ChatSystem.Interfaces
+  children:
+  - Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnGeneralChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  - Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnRoomChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  langs:
+  - csharp
+  - vb
+  name: IChatMessageCallbacks
+  nameWithType: IChatMessageCallbacks
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks
+  type: Interface
+  source:
+    id: IChatMessageCallbacks
+    path: ''
+    startLine: 1743
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: public interface IChatMessageCallbacks
+    content.vb: Public Interface IChatMessageCallbacks
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnGeneralChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  commentId: M:Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnGeneralChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  id: OnGeneralChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  parent: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks
+  langs:
+  - csharp
+  - vb
+  name: OnGeneralChatMessage(ChatMessage)
+  nameWithType: IChatMessageCallbacks.OnGeneralChatMessage(ChatMessage)
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnGeneralChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  type: Method
+  source:
+    id: OnGeneralChatMessage
+    path: ''
+    startLine: 1745
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: void OnGeneralChatMessage(ChatMessage message)
+    parameters:
+    - id: message
+      type: Klem.SocketChat.ChatSystem.DataClasses.ChatMessage
+    content.vb: Sub OnGeneralChatMessage(message As ChatMessage)
+  overload: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnGeneralChatMessage*
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnRoomChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  commentId: M:Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnRoomChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  id: OnRoomChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  parent: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks
+  langs:
+  - csharp
+  - vb
+  name: OnRoomChatMessage(ChatMessage)
+  nameWithType: IChatMessageCallbacks.OnRoomChatMessage(ChatMessage)
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnRoomChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  type: Method
+  source:
+    id: OnRoomChatMessage
+    path: ''
+    startLine: 1746
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: void OnRoomChatMessage(ChatMessage message)
+    parameters:
+    - id: message
+      type: Klem.SocketChat.ChatSystem.DataClasses.ChatMessage
+    content.vb: Sub OnRoomChatMessage(message As ChatMessage)
+  overload: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnRoomChatMessage*
+references:
+- uid: Klem.SocketChat.ChatSystem.Interfaces
+  commentId: N:Klem.SocketChat.ChatSystem.Interfaces
+  name: Klem.SocketChat.ChatSystem.Interfaces
+  nameWithType: Klem.SocketChat.ChatSystem.Interfaces
+  fullName: Klem.SocketChat.ChatSystem.Interfaces
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Interfaces
+    name: Interfaces
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Interfaces
+    name: Interfaces
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnGeneralChatMessage*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnGeneralChatMessage
+  name: OnGeneralChatMessage
+  nameWithType: IChatMessageCallbacks.OnGeneralChatMessage
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnGeneralChatMessage
+- uid: Klem.SocketChat.ChatSystem.DataClasses.ChatMessage
+  commentId: T:Klem.SocketChat.ChatSystem.DataClasses.ChatMessage
+  parent: Klem.SocketChat.ChatSystem.DataClasses
+  name: ChatMessage
+  nameWithType: ChatMessage
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.ChatMessage
+- uid: Klem.SocketChat.ChatSystem.DataClasses
+  commentId: N:Klem.SocketChat.ChatSystem.DataClasses
+  name: Klem.SocketChat.ChatSystem.DataClasses
+  nameWithType: Klem.SocketChat.ChatSystem.DataClasses
+  fullName: Klem.SocketChat.ChatSystem.DataClasses
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnRoomChatMessage*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnRoomChatMessage
+  name: OnRoomChatMessage
+  nameWithType: IChatMessageCallbacks.OnRoomChatMessage
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks.OnRoomChatMessage

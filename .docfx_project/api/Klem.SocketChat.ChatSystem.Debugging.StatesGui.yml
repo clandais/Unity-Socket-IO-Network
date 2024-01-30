@@ -1,0 +1,1070 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.Debugging.StatesGui
+  commentId: T:Klem.SocketChat.ChatSystem.Debugging.StatesGui
+  id: StatesGui
+  parent: Klem.SocketChat.ChatSystem.Debugging
+  children:
+  - Klem.SocketChat.ChatSystem.Debugging.StatesGui.Buttons
+  - Klem.SocketChat.ChatSystem.Debugging.StatesGui.DontDestroy
+  - Klem.SocketChat.ChatSystem.Debugging.StatesGui.GuiOffset
+  - Klem.SocketChat.ChatSystem.Debugging.StatesGui.Latency
+  - Klem.SocketChat.ChatSystem.Debugging.StatesGui.OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+  - Klem.SocketChat.ChatSystem.Debugging.StatesGui.RoomDetails
+  - Klem.SocketChat.ChatSystem.Debugging.StatesGui.ServerUri
+  - Klem.SocketChat.ChatSystem.Debugging.StatesGui.UserDetails
+  langs:
+  - csharp
+  - vb
+  name: StatesGui
+  nameWithType: StatesGui
+  fullName: Klem.SocketChat.ChatSystem.Debugging.StatesGui
+  type: Class
+  source:
+    id: StatesGui
+    path: ''
+    startLine: 1284
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Debugging
+  summary: "\nSimilar to Photon.Pun.UtilityScripts.StatesGui, but for this system\n"
+  example: []
+  syntax:
+    content: 'public class StatesGui : MonoBehaviourSocketCallBacks, IConnectionCallbacks, IErrorCallbacks, IRoomCallbacks, IChatMessageCallbacks'
+    content.vb: Public Class StatesGui Inherits MonoBehaviourSocketCallBacks Implements IConnectionCallbacks, IErrorCallbacks, IRoomCallbacks, IChatMessageCallbacks
+  inheritance:
+  - System.Object
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  implements:
+  - Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+  - Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks
+  - Klem.SocketChat.ChatSystem.Interfaces.IRoomCallbacks
+  - Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks
+  inheritedMembers:
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnEnable
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisable
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisconnecting(System.String)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisconnected(System.String)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectAttempt(System.Int32)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnPing(System.EventArgs)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnPong(System.Int32)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnError(System.String)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnNewUserConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnUserLeftRoom(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnGetUser(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnChatInviteReceived(Klem.SocketChat.ChatSystem.DataClasses.ChatInvite)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomListChanged(Klem.SocketChat.ChatSystem.DataClasses.Room[])
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomCreated(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnCreateRoomFailed(System.String)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnServerErrorMessage(System.String)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectFailed(System.EventArgs)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnected(System.Int32)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectError(System.Exception)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomListUpdate(Klem.SocketChat.ChatSystem.DataClasses.Room[])
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomJoined(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomCreationFailed(System.String)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomUserJoined(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomLeft(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomLeftByOtherUser(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnGeneralChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+- uid: Klem.SocketChat.ChatSystem.Debugging.StatesGui.GuiOffset
+  commentId: F:Klem.SocketChat.ChatSystem.Debugging.StatesGui.GuiOffset
+  id: GuiOffset
+  parent: Klem.SocketChat.ChatSystem.Debugging.StatesGui
+  langs:
+  - csharp
+  - vb
+  name: GuiOffset
+  nameWithType: StatesGui.GuiOffset
+  fullName: Klem.SocketChat.ChatSystem.Debugging.StatesGui.GuiOffset
+  type: Field
+  source:
+    id: GuiOffset
+    path: ''
+    startLine: 1287
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Debugging
+  syntax:
+    content: public Rect GuiOffset
+    return:
+      type: Global.Rect
+    content.vb: Public GuiOffset As Rect
+- uid: Klem.SocketChat.ChatSystem.Debugging.StatesGui.DontDestroy
+  commentId: F:Klem.SocketChat.ChatSystem.Debugging.StatesGui.DontDestroy
+  id: DontDestroy
+  parent: Klem.SocketChat.ChatSystem.Debugging.StatesGui
+  langs:
+  - csharp
+  - vb
+  name: DontDestroy
+  nameWithType: StatesGui.DontDestroy
+  fullName: Klem.SocketChat.ChatSystem.Debugging.StatesGui.DontDestroy
+  type: Field
+  source:
+    id: DontDestroy
+    path: ''
+    startLine: 1288
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Debugging
+  syntax:
+    content: public bool DontDestroy
+    return:
+      type: System.Boolean
+    content.vb: Public DontDestroy As Boolean
+- uid: Klem.SocketChat.ChatSystem.Debugging.StatesGui.Latency
+  commentId: F:Klem.SocketChat.ChatSystem.Debugging.StatesGui.Latency
+  id: Latency
+  parent: Klem.SocketChat.ChatSystem.Debugging.StatesGui
+  langs:
+  - csharp
+  - vb
+  name: Latency
+  nameWithType: StatesGui.Latency
+  fullName: Klem.SocketChat.ChatSystem.Debugging.StatesGui.Latency
+  type: Field
+  source:
+    id: Latency
+    path: ''
+    startLine: 1289
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Debugging
+  syntax:
+    content: public bool Latency
+    return:
+      type: System.Boolean
+    content.vb: Public Latency As Boolean
+- uid: Klem.SocketChat.ChatSystem.Debugging.StatesGui.ServerUri
+  commentId: F:Klem.SocketChat.ChatSystem.Debugging.StatesGui.ServerUri
+  id: ServerUri
+  parent: Klem.SocketChat.ChatSystem.Debugging.StatesGui
+  langs:
+  - csharp
+  - vb
+  name: ServerUri
+  nameWithType: StatesGui.ServerUri
+  fullName: Klem.SocketChat.ChatSystem.Debugging.StatesGui.ServerUri
+  type: Field
+  source:
+    id: ServerUri
+    path: ''
+    startLine: 1290
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Debugging
+  syntax:
+    content: public bool ServerUri
+    return:
+      type: System.Boolean
+    content.vb: Public ServerUri As Boolean
+- uid: Klem.SocketChat.ChatSystem.Debugging.StatesGui.UserDetails
+  commentId: F:Klem.SocketChat.ChatSystem.Debugging.StatesGui.UserDetails
+  id: UserDetails
+  parent: Klem.SocketChat.ChatSystem.Debugging.StatesGui
+  langs:
+  - csharp
+  - vb
+  name: UserDetails
+  nameWithType: StatesGui.UserDetails
+  fullName: Klem.SocketChat.ChatSystem.Debugging.StatesGui.UserDetails
+  type: Field
+  source:
+    id: UserDetails
+    path: ''
+    startLine: 1291
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Debugging
+  syntax:
+    content: public bool UserDetails
+    return:
+      type: System.Boolean
+    content.vb: Public UserDetails As Boolean
+- uid: Klem.SocketChat.ChatSystem.Debugging.StatesGui.RoomDetails
+  commentId: F:Klem.SocketChat.ChatSystem.Debugging.StatesGui.RoomDetails
+  id: RoomDetails
+  parent: Klem.SocketChat.ChatSystem.Debugging.StatesGui
+  langs:
+  - csharp
+  - vb
+  name: RoomDetails
+  nameWithType: StatesGui.RoomDetails
+  fullName: Klem.SocketChat.ChatSystem.Debugging.StatesGui.RoomDetails
+  type: Field
+  source:
+    id: RoomDetails
+    path: ''
+    startLine: 1292
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Debugging
+  syntax:
+    content: public bool RoomDetails
+    return:
+      type: System.Boolean
+    content.vb: Public RoomDetails As Boolean
+- uid: Klem.SocketChat.ChatSystem.Debugging.StatesGui.Buttons
+  commentId: F:Klem.SocketChat.ChatSystem.Debugging.StatesGui.Buttons
+  id: Buttons
+  parent: Klem.SocketChat.ChatSystem.Debugging.StatesGui
+  langs:
+  - csharp
+  - vb
+  name: Buttons
+  nameWithType: StatesGui.Buttons
+  fullName: Klem.SocketChat.ChatSystem.Debugging.StatesGui.Buttons
+  type: Field
+  source:
+    id: Buttons
+    path: ''
+    startLine: 1293
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Debugging
+  syntax:
+    content: public bool Buttons
+    return:
+      type: System.Boolean
+    content.vb: Public Buttons As Boolean
+- uid: Klem.SocketChat.ChatSystem.Debugging.StatesGui.OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+  commentId: M:Klem.SocketChat.ChatSystem.Debugging.StatesGui.OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+  id: OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+  parent: Klem.SocketChat.ChatSystem.Debugging.StatesGui
+  langs:
+  - csharp
+  - vb
+  name: OnConnectedToMaster(SocketServerConnection)
+  nameWithType: StatesGui.OnConnectedToMaster(SocketServerConnection)
+  fullName: Klem.SocketChat.ChatSystem.Debugging.StatesGui.OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+  type: Method
+  source:
+    id: OnConnectedToMaster
+    path: ''
+    startLine: 1324
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Debugging
+  syntax:
+    content: public override void OnConnectedToMaster(SocketServerConnection connection)
+    parameters:
+    - id: connection
+      type: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+    content.vb: Public Overrides Sub OnConnectedToMaster(connection As SocketServerConnection)
+  overridden: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+  overload: Klem.SocketChat.ChatSystem.Debugging.StatesGui.OnConnectedToMaster*
+references:
+- uid: Klem.SocketChat.ChatSystem.Debugging
+  commentId: N:Klem.SocketChat.ChatSystem.Debugging
+  name: Klem.SocketChat.ChatSystem.Debugging
+  nameWithType: Klem.SocketChat.ChatSystem.Debugging
+  fullName: Klem.SocketChat.ChatSystem.Debugging
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Debugging
+    name: Debugging
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Debugging
+    name: Debugging
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  commentId: T:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  parent: Klem.SocketChat.ChatSystem
+  name: MonoBehaviourSocketCallBacks
+  nameWithType: MonoBehaviourSocketCallBacks
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+  commentId: T:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+  parent: Klem.SocketChat.ChatSystem.Interfaces
+  name: IConnectionCallbacks
+  nameWithType: IConnectionCallbacks
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks
+  commentId: T:Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks
+  parent: Klem.SocketChat.ChatSystem.Interfaces
+  name: IErrorCallbacks
+  nameWithType: IErrorCallbacks
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IRoomCallbacks
+  commentId: T:Klem.SocketChat.ChatSystem.Interfaces.IRoomCallbacks
+  parent: Klem.SocketChat.ChatSystem.Interfaces
+  name: IRoomCallbacks
+  nameWithType: IRoomCallbacks
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IRoomCallbacks
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks
+  commentId: T:Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks
+  parent: Klem.SocketChat.ChatSystem.Interfaces
+  name: IChatMessageCallbacks
+  nameWithType: IChatMessageCallbacks
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnEnable
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnEnable
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnEnable()
+  nameWithType: MonoBehaviourSocketCallBacks.OnEnable()
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnEnable()
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnEnable
+    name: OnEnable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnEnable
+    name: OnEnable
+  - name: (
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisable
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisable
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnDisable()
+  nameWithType: MonoBehaviourSocketCallBacks.OnDisable()
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisable()
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisable
+    name: OnDisable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisable
+    name: OnDisable
+  - name: (
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisconnecting(System.String)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisconnecting(System.String)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  isExternal: true
+  name: OnDisconnecting(string)
+  nameWithType: MonoBehaviourSocketCallBacks.OnDisconnecting(string)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisconnecting(string)
+  nameWithType.vb: MonoBehaviourSocketCallBacks.OnDisconnecting(String)
+  fullName.vb: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisconnecting(String)
+  name.vb: OnDisconnecting(String)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisconnecting(System.String)
+    name: OnDisconnecting
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisconnecting(System.String)
+    name: OnDisconnecting
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisconnected(System.String)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisconnected(System.String)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  isExternal: true
+  name: OnDisconnected(string)
+  nameWithType: MonoBehaviourSocketCallBacks.OnDisconnected(string)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisconnected(string)
+  nameWithType.vb: MonoBehaviourSocketCallBacks.OnDisconnected(String)
+  fullName.vb: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisconnected(String)
+  name.vb: OnDisconnected(String)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisconnected(System.String)
+    name: OnDisconnected
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnDisconnected(System.String)
+    name: OnDisconnected
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectAttempt(System.Int32)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectAttempt(System.Int32)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  isExternal: true
+  name: OnReconnectAttempt(int)
+  nameWithType: MonoBehaviourSocketCallBacks.OnReconnectAttempt(int)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectAttempt(int)
+  nameWithType.vb: MonoBehaviourSocketCallBacks.OnReconnectAttempt(Integer)
+  fullName.vb: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectAttempt(Integer)
+  name.vb: OnReconnectAttempt(Integer)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectAttempt(System.Int32)
+    name: OnReconnectAttempt
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectAttempt(System.Int32)
+    name: OnReconnectAttempt
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnPing(System.EventArgs)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnPing(System.EventArgs)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  isExternal: true
+  name: OnPing(EventArgs)
+  nameWithType: MonoBehaviourSocketCallBacks.OnPing(EventArgs)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnPing(System.EventArgs)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnPing(System.EventArgs)
+    name: OnPing
+  - name: (
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnPing(System.EventArgs)
+    name: OnPing
+  - name: (
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnPong(System.Int32)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnPong(System.Int32)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  isExternal: true
+  name: OnPong(int)
+  nameWithType: MonoBehaviourSocketCallBacks.OnPong(int)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnPong(int)
+  nameWithType.vb: MonoBehaviourSocketCallBacks.OnPong(Integer)
+  fullName.vb: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnPong(Integer)
+  name.vb: OnPong(Integer)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnPong(System.Int32)
+    name: OnPong
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnPong(System.Int32)
+    name: OnPong
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnError(System.String)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnError(System.String)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  isExternal: true
+  name: OnError(string)
+  nameWithType: MonoBehaviourSocketCallBacks.OnError(string)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnError(string)
+  nameWithType.vb: MonoBehaviourSocketCallBacks.OnError(String)
+  fullName.vb: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnError(String)
+  name.vb: OnError(String)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnError(System.String)
+    name: OnError
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnError(System.String)
+    name: OnError
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnNewUserConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnNewUserConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnNewUserConnectedToMaster(SocketIOUser)
+  nameWithType: MonoBehaviourSocketCallBacks.OnNewUserConnectedToMaster(SocketIOUser)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnNewUserConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnNewUserConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+    name: OnNewUserConnectedToMaster
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+    name: SocketIOUser
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnNewUserConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+    name: OnNewUserConnectedToMaster
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+    name: SocketIOUser
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnUserLeftRoom(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnUserLeftRoom(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnUserLeftRoom(RoomAndUser)
+  nameWithType: MonoBehaviourSocketCallBacks.OnUserLeftRoom(RoomAndUser)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnUserLeftRoom(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnUserLeftRoom(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+    name: OnUserLeftRoom
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser
+    name: RoomAndUser
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnUserLeftRoom(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+    name: OnUserLeftRoom
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser
+    name: RoomAndUser
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnGetUser(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnGetUser(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnGetUser(SocketIOUser)
+  nameWithType: MonoBehaviourSocketCallBacks.OnGetUser(SocketIOUser)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnGetUser(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnGetUser(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+    name: OnGetUser
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+    name: SocketIOUser
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnGetUser(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
+    name: OnGetUser
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+    name: SocketIOUser
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnChatInviteReceived(Klem.SocketChat.ChatSystem.DataClasses.ChatInvite)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnChatInviteReceived(Klem.SocketChat.ChatSystem.DataClasses.ChatInvite)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnChatInviteReceived(ChatInvite)
+  nameWithType: MonoBehaviourSocketCallBacks.OnChatInviteReceived(ChatInvite)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnChatInviteReceived(Klem.SocketChat.ChatSystem.DataClasses.ChatInvite)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnChatInviteReceived(Klem.SocketChat.ChatSystem.DataClasses.ChatInvite)
+    name: OnChatInviteReceived
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.ChatInvite
+    name: ChatInvite
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnChatInviteReceived(Klem.SocketChat.ChatSystem.DataClasses.ChatInvite)
+    name: OnChatInviteReceived
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.ChatInvite
+    name: ChatInvite
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomListChanged(Klem.SocketChat.ChatSystem.DataClasses.Room[])
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomListChanged(Klem.SocketChat.ChatSystem.DataClasses.Room[])
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnRoomListChanged(Room[])
+  nameWithType: MonoBehaviourSocketCallBacks.OnRoomListChanged(Room[])
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomListChanged(Klem.SocketChat.ChatSystem.DataClasses.Room[])
+  nameWithType.vb: MonoBehaviourSocketCallBacks.OnRoomListChanged(Room())
+  fullName.vb: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomListChanged(Klem.SocketChat.ChatSystem.DataClasses.Room())
+  name.vb: OnRoomListChanged(Room())
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomListChanged(Klem.SocketChat.ChatSystem.DataClasses.Room[])
+    name: OnRoomListChanged
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.Room
+    name: Room
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomListChanged(Klem.SocketChat.ChatSystem.DataClasses.Room[])
+    name: OnRoomListChanged
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.Room
+    name: Room
+  - name: (
+  - name: )
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomCreated(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomCreated(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnRoomCreated(Room)
+  nameWithType: MonoBehaviourSocketCallBacks.OnRoomCreated(Room)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomCreated(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomCreated(Klem.SocketChat.ChatSystem.DataClasses.Room)
+    name: OnRoomCreated
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.Room
+    name: Room
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomCreated(Klem.SocketChat.ChatSystem.DataClasses.Room)
+    name: OnRoomCreated
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.Room
+    name: Room
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnCreateRoomFailed(System.String)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnCreateRoomFailed(System.String)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  isExternal: true
+  name: OnCreateRoomFailed(string)
+  nameWithType: MonoBehaviourSocketCallBacks.OnCreateRoomFailed(string)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnCreateRoomFailed(string)
+  nameWithType.vb: MonoBehaviourSocketCallBacks.OnCreateRoomFailed(String)
+  fullName.vb: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnCreateRoomFailed(String)
+  name.vb: OnCreateRoomFailed(String)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnCreateRoomFailed(System.String)
+    name: OnCreateRoomFailed
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnCreateRoomFailed(System.String)
+    name: OnCreateRoomFailed
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnServerErrorMessage(System.String)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnServerErrorMessage(System.String)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  isExternal: true
+  name: OnServerErrorMessage(string)
+  nameWithType: MonoBehaviourSocketCallBacks.OnServerErrorMessage(string)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnServerErrorMessage(string)
+  nameWithType.vb: MonoBehaviourSocketCallBacks.OnServerErrorMessage(String)
+  fullName.vb: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnServerErrorMessage(String)
+  name.vb: OnServerErrorMessage(String)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnServerErrorMessage(System.String)
+    name: OnServerErrorMessage
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnServerErrorMessage(System.String)
+    name: OnServerErrorMessage
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectFailed(System.EventArgs)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectFailed(System.EventArgs)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  isExternal: true
+  name: OnReconnectFailed(EventArgs)
+  nameWithType: MonoBehaviourSocketCallBacks.OnReconnectFailed(EventArgs)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectFailed(System.EventArgs)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectFailed(System.EventArgs)
+    name: OnReconnectFailed
+  - name: (
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectFailed(System.EventArgs)
+    name: OnReconnectFailed
+  - name: (
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnected(System.Int32)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnected(System.Int32)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  isExternal: true
+  name: OnReconnected(int)
+  nameWithType: MonoBehaviourSocketCallBacks.OnReconnected(int)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnected(int)
+  nameWithType.vb: MonoBehaviourSocketCallBacks.OnReconnected(Integer)
+  fullName.vb: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnected(Integer)
+  name.vb: OnReconnected(Integer)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnected(System.Int32)
+    name: OnReconnected
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnected(System.Int32)
+    name: OnReconnected
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectError(System.Exception)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectError(System.Exception)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  isExternal: true
+  name: OnReconnectError(Exception)
+  nameWithType: MonoBehaviourSocketCallBacks.OnReconnectError(Exception)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectError(System.Exception)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectError(System.Exception)
+    name: OnReconnectError
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnReconnectError(System.Exception)
+    name: OnReconnectError
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomListUpdate(Klem.SocketChat.ChatSystem.DataClasses.Room[])
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomListUpdate(Klem.SocketChat.ChatSystem.DataClasses.Room[])
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnRoomListUpdate(Room[])
+  nameWithType: MonoBehaviourSocketCallBacks.OnRoomListUpdate(Room[])
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomListUpdate(Klem.SocketChat.ChatSystem.DataClasses.Room[])
+  nameWithType.vb: MonoBehaviourSocketCallBacks.OnRoomListUpdate(Room())
+  fullName.vb: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomListUpdate(Klem.SocketChat.ChatSystem.DataClasses.Room())
+  name.vb: OnRoomListUpdate(Room())
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomListUpdate(Klem.SocketChat.ChatSystem.DataClasses.Room[])
+    name: OnRoomListUpdate
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.Room
+    name: Room
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomListUpdate(Klem.SocketChat.ChatSystem.DataClasses.Room[])
+    name: OnRoomListUpdate
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.Room
+    name: Room
+  - name: (
+  - name: )
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomJoined(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomJoined(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnRoomJoined(Room)
+  nameWithType: MonoBehaviourSocketCallBacks.OnRoomJoined(Room)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomJoined(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomJoined(Klem.SocketChat.ChatSystem.DataClasses.Room)
+    name: OnRoomJoined
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.Room
+    name: Room
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomJoined(Klem.SocketChat.ChatSystem.DataClasses.Room)
+    name: OnRoomJoined
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.Room
+    name: Room
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomCreationFailed(System.String)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomCreationFailed(System.String)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  isExternal: true
+  name: OnRoomCreationFailed(string)
+  nameWithType: MonoBehaviourSocketCallBacks.OnRoomCreationFailed(string)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomCreationFailed(string)
+  nameWithType.vb: MonoBehaviourSocketCallBacks.OnRoomCreationFailed(String)
+  fullName.vb: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomCreationFailed(String)
+  name.vb: OnRoomCreationFailed(String)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomCreationFailed(System.String)
+    name: OnRoomCreationFailed
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomCreationFailed(System.String)
+    name: OnRoomCreationFailed
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomUserJoined(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomUserJoined(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnRoomUserJoined(RoomAndUser)
+  nameWithType: MonoBehaviourSocketCallBacks.OnRoomUserJoined(RoomAndUser)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomUserJoined(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomUserJoined(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+    name: OnRoomUserJoined
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser
+    name: RoomAndUser
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomUserJoined(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+    name: OnRoomUserJoined
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser
+    name: RoomAndUser
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomLeft(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomLeft(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnRoomLeft(Room)
+  nameWithType: MonoBehaviourSocketCallBacks.OnRoomLeft(Room)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomLeft(Klem.SocketChat.ChatSystem.DataClasses.Room)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomLeft(Klem.SocketChat.ChatSystem.DataClasses.Room)
+    name: OnRoomLeft
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.Room
+    name: Room
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomLeft(Klem.SocketChat.ChatSystem.DataClasses.Room)
+    name: OnRoomLeft
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.Room
+    name: Room
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomLeftByOtherUser(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomLeftByOtherUser(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnRoomLeftByOtherUser(RoomAndUser)
+  nameWithType: MonoBehaviourSocketCallBacks.OnRoomLeftByOtherUser(RoomAndUser)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomLeftByOtherUser(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomLeftByOtherUser(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+    name: OnRoomLeftByOtherUser
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser
+    name: RoomAndUser
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomLeftByOtherUser(Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser)
+    name: OnRoomLeftByOtherUser
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.RoomAndUser
+    name: RoomAndUser
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnGeneralChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnGeneralChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnGeneralChatMessage(ChatMessage)
+  nameWithType: MonoBehaviourSocketCallBacks.OnGeneralChatMessage(ChatMessage)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnGeneralChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnGeneralChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+    name: OnGeneralChatMessage
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.ChatMessage
+    name: ChatMessage
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnGeneralChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+    name: OnGeneralChatMessage
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.ChatMessage
+    name: ChatMessage
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnRoomChatMessage(ChatMessage)
+  nameWithType: MonoBehaviourSocketCallBacks.OnRoomChatMessage(ChatMessage)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+    name: OnRoomChatMessage
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.ChatMessage
+    name: ChatMessage
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnRoomChatMessage(Klem.SocketChat.ChatSystem.DataClasses.ChatMessage)
+    name: OnRoomChatMessage
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.ChatMessage
+    name: ChatMessage
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Klem.SocketChat.ChatSystem
+  commentId: N:Klem.SocketChat.ChatSystem
+  name: Klem.SocketChat.ChatSystem
+  nameWithType: Klem.SocketChat.ChatSystem
+  fullName: Klem.SocketChat.ChatSystem
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+- uid: Klem.SocketChat.ChatSystem.Interfaces
+  commentId: N:Klem.SocketChat.ChatSystem.Interfaces
+  name: Klem.SocketChat.ChatSystem.Interfaces
+  nameWithType: Klem.SocketChat.ChatSystem.Interfaces
+  fullName: Klem.SocketChat.ChatSystem.Interfaces
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Interfaces
+    name: Interfaces
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Interfaces
+    name: Interfaces
+- uid: Global.Rect
+  commentId: '!:Global.Rect'
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Rect
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+  commentId: M:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+  parent: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  name: OnConnectedToMaster(SocketServerConnection)
+  nameWithType: MonoBehaviourSocketCallBacks.OnConnectedToMaster(SocketServerConnection)
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+  spec.csharp:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+    name: OnConnectedToMaster
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+    name: SocketServerConnection
+  - name: )
+  spec.vb:
+  - uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks.OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+    name: OnConnectedToMaster
+  - name: (
+  - uid: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+    name: SocketServerConnection
+  - name: )
+- uid: Klem.SocketChat.ChatSystem.Debugging.StatesGui.OnConnectedToMaster*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Debugging.StatesGui.OnConnectedToMaster
+  name: OnConnectedToMaster
+  nameWithType: StatesGui.OnConnectedToMaster
+  fullName: Klem.SocketChat.ChatSystem.Debugging.StatesGui.OnConnectedToMaster
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+  commentId: T:Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+  parent: Klem.SocketChat.ChatSystem.DataClasses
+  name: SocketServerConnection
+  nameWithType: SocketServerConnection
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+- uid: Klem.SocketChat.ChatSystem.DataClasses
+  commentId: N:Klem.SocketChat.ChatSystem.DataClasses
+  name: Klem.SocketChat.ChatSystem.DataClasses
+  nameWithType: Klem.SocketChat.ChatSystem.DataClasses
+  fullName: Klem.SocketChat.ChatSystem.DataClasses
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses

@@ -1,0 +1,13 @@
+﻿apiRules:
+- include:
+    uidRegex: ^Klem\.SocketChat\.ChatSystem
+    type: Namespace
+- include:
+    uidRegex: ^Global
+    type: Namespace
+- exclude:
+    uidRegex: ^Klem\.SocketChat\.ChatSystem\.SimpleChatSample
+    type: Namespace
+- exclude:
+    uidRegex: .* # Every other namespaces are ignored
+    type: Namespace

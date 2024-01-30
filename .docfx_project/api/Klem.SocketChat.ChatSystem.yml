@@ -1,0 +1,52 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem
+  commentId: N:Klem.SocketChat.ChatSystem
+  id: Klem.SocketChat.ChatSystem
+  children:
+  - Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  - Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: Klem.SocketChat.ChatSystem
+  nameWithType: Klem.SocketChat.ChatSystem
+  fullName: Klem.SocketChat.ChatSystem
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  commentId: T:Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+  parent: Klem.SocketChat.ChatSystem
+  name: MonoBehaviourSocketCallBacks
+  nameWithType: MonoBehaviourSocketCallBacks
+  fullName: Klem.SocketChat.ChatSystem.MonoBehaviourSocketCallBacks
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork
+  commentId: T:Klem.SocketChat.ChatSystem.SocketIONetwork
+  name: SocketIONetwork
+  nameWithType: SocketIONetwork
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork
+- uid: Klem.SocketChat.ChatSystem
+  commentId: N:Klem.SocketChat.ChatSystem
+  name: Klem.SocketChat.ChatSystem
+  nameWithType: Klem.SocketChat.ChatSystem
+  fullName: Klem.SocketChat.ChatSystem
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem

@@ -1,0 +1,107 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType
+  commentId: T:Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType
+  id: InvitePanel.ResultType
+  parent: Klem.SocketChat.ChatSystem.SimpleChatSample
+  children:
+  - Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType.Cancel
+  - Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType.Confirm
+  langs:
+  - csharp
+  - vb
+  name: InvitePanel.ResultType
+  nameWithType: InvitePanel.ResultType
+  fullName: Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType
+  type: Enum
+  source:
+    id: ResultType
+    path: ''
+    startLine: 6549
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.SimpleChatSample
+  syntax:
+    content: public enum InvitePanel.ResultType
+    content.vb: Public Enum InvitePanel.ResultType
+- uid: Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType.Confirm
+  commentId: F:Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType.Confirm
+  id: Confirm
+  parent: Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType
+  langs:
+  - csharp
+  - vb
+  name: Confirm
+  nameWithType: InvitePanel.ResultType.Confirm
+  fullName: Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType.Confirm
+  type: Field
+  source:
+    id: Confirm
+    path: ''
+    startLine: 6551
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.SimpleChatSample
+  syntax:
+    content: Confirm = 0
+    return:
+      type: Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType
+- uid: Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType.Cancel
+  commentId: F:Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType.Cancel
+  id: Cancel
+  parent: Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType
+  langs:
+  - csharp
+  - vb
+  name: Cancel
+  nameWithType: InvitePanel.ResultType.Cancel
+  fullName: Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType.Cancel
+  type: Field
+  source:
+    id: Cancel
+    path: ''
+    startLine: 6552
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.SimpleChatSample
+  syntax:
+    content: Cancel = 1
+    return:
+      type: Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType
+references:
+- uid: Klem.SocketChat.ChatSystem.SimpleChatSample
+  commentId: N:Klem.SocketChat.ChatSystem.SimpleChatSample
+  name: Klem.SocketChat.ChatSystem.SimpleChatSample
+  nameWithType: Klem.SocketChat.ChatSystem.SimpleChatSample
+  fullName: Klem.SocketChat.ChatSystem.SimpleChatSample
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.SimpleChatSample
+    name: SimpleChatSample
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.SimpleChatSample
+    name: SimpleChatSample
+- uid: Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType
+  commentId: T:Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType
+  parent: Klem.SocketChat.ChatSystem.SimpleChatSample
+  isExternal: true
+  name: ResultType
+  nameWithType: InvitePanel.ResultType
+  fullName: Klem.SocketChat.ChatSystem.SimpleChatSample.InvitePanel.ResultType

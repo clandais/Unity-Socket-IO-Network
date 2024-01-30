@@ -1,0 +1,212 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+  commentId: T:Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+  id: SocketIOUser
+  parent: Klem.SocketChat.ChatSystem.DataClasses
+  children:
+  - Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.ChatId
+  - Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.Color
+  - Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.PhotonId
+  - Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.RoomId
+  - Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.Username
+  langs:
+  - csharp
+  - vb
+  name: SocketIOUser
+  nameWithType: SocketIOUser
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+  type: Class
+  source:
+    id: SocketIOUser
+    path: ''
+    startLine: 1241
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class SocketIOUser
+    content.vb: >-
+      <Serializable>
+
+      Public Class SocketIOUser
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.ChatId
+  commentId: F:Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.ChatId
+  id: ChatId
+  parent: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+  langs:
+  - csharp
+  - vb
+  name: ChatId
+  nameWithType: SocketIOUser.ChatId
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.ChatId
+  type: Field
+  source:
+    id: ChatId
+    path: ''
+    startLine: 1244
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  syntax:
+    content: public string ChatId
+    return:
+      type: System.String
+    content.vb: Public ChatId As String
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.Username
+  commentId: F:Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.Username
+  id: Username
+  parent: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+  langs:
+  - csharp
+  - vb
+  name: Username
+  nameWithType: SocketIOUser.Username
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.Username
+  type: Field
+  source:
+    id: Username
+    path: ''
+    startLine: 1245
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  syntax:
+    content: public string Username
+    return:
+      type: System.String
+    content.vb: Public Username As String
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.PhotonId
+  commentId: F:Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.PhotonId
+  id: PhotonId
+  parent: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+  langs:
+  - csharp
+  - vb
+  name: PhotonId
+  nameWithType: SocketIOUser.PhotonId
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.PhotonId
+  type: Field
+  source:
+    id: PhotonId
+    path: ''
+    startLine: 1246
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  syntax:
+    content: public string PhotonId
+    return:
+      type: System.String
+    content.vb: Public PhotonId As String
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.Color
+  commentId: F:Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.Color
+  id: Color
+  parent: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: SocketIOUser.Color
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.Color
+  type: Field
+  source:
+    id: Color
+    path: ''
+    startLine: 1247
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  syntax:
+    content: public string Color
+    return:
+      type: System.String
+    content.vb: Public Color As String
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.RoomId
+  commentId: F:Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.RoomId
+  id: RoomId
+  parent: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
+  langs:
+  - csharp
+  - vb
+  name: RoomId
+  nameWithType: SocketIOUser.RoomId
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.RoomId
+  type: Field
+  source:
+    id: RoomId
+    path: ''
+    startLine: 1248
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.DataClasses
+  syntax:
+    content: public string RoomId
+    return:
+      type: System.String
+    content.vb: Public RoomId As String
+references:
+- uid: Klem.SocketChat.ChatSystem.DataClasses
+  commentId: N:Klem.SocketChat.ChatSystem.DataClasses
+  name: Klem.SocketChat.ChatSystem.DataClasses
+  nameWithType: Klem.SocketChat.ChatSystem.DataClasses
+  fullName: Klem.SocketChat.ChatSystem.DataClasses
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,423 @@
+### YamlMime:ManagedReference
+items:
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+  commentId: T:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+  id: IConnectionCallbacks
+  parent: Klem.SocketChat.ChatSystem.Interfaces
+  children:
+  - Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+  - Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnected(System.String)
+  - Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnecting(System.String)
+  - Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPing(System.EventArgs)
+  - Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPong(System.Int32)
+  - Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectAttempt(System.Int32)
+  - Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnected(System.Int32)
+  - Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectError(System.Exception)
+  - Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectFailed(System.EventArgs)
+  langs:
+  - csharp
+  - vb
+  name: IConnectionCallbacks
+  nameWithType: IConnectionCallbacks
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+  type: Interface
+  source:
+    id: IConnectionCallbacks
+    path: ''
+    startLine: 1708
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: public interface IConnectionCallbacks
+    content.vb: Public Interface IConnectionCallbacks
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+  commentId: M:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+  id: OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+  parent: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+  langs:
+  - csharp
+  - vb
+  name: OnConnectedToMaster(SocketServerConnection)
+  nameWithType: IConnectionCallbacks.OnConnectedToMaster(SocketServerConnection)
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnConnectedToMaster(Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection)
+  type: Method
+  source:
+    id: OnConnectedToMaster
+    path: ''
+    startLine: 1710
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: void OnConnectedToMaster(SocketServerConnection connection)
+    parameters:
+    - id: connection
+      type: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+    content.vb: Sub OnConnectedToMaster(connection As SocketServerConnection)
+  overload: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnConnectedToMaster*
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnecting(System.String)
+  commentId: M:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnecting(System.String)
+  id: OnDisconnecting(System.String)
+  parent: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+  langs:
+  - csharp
+  - vb
+  name: OnDisconnecting(string)
+  nameWithType: IConnectionCallbacks.OnDisconnecting(string)
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnecting(string)
+  type: Method
+  source:
+    id: OnDisconnecting
+    path: ''
+    startLine: 1711
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: void OnDisconnecting(string reason)
+    parameters:
+    - id: reason
+      type: System.String
+    content.vb: Sub OnDisconnecting(reason As String)
+  overload: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnecting*
+  nameWithType.vb: IConnectionCallbacks.OnDisconnecting(String)
+  fullName.vb: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnecting(String)
+  name.vb: OnDisconnecting(String)
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnected(System.String)
+  commentId: M:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnected(System.String)
+  id: OnDisconnected(System.String)
+  parent: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+  langs:
+  - csharp
+  - vb
+  name: OnDisconnected(string)
+  nameWithType: IConnectionCallbacks.OnDisconnected(string)
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnected(string)
+  type: Method
+  source:
+    id: OnDisconnected
+    path: ''
+    startLine: 1712
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: void OnDisconnected(string reason)
+    parameters:
+    - id: reason
+      type: System.String
+    content.vb: Sub OnDisconnected(reason As String)
+  overload: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnected*
+  nameWithType.vb: IConnectionCallbacks.OnDisconnected(String)
+  fullName.vb: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnected(String)
+  name.vb: OnDisconnected(String)
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectAttempt(System.Int32)
+  commentId: M:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectAttempt(System.Int32)
+  id: OnReconnectAttempt(System.Int32)
+  parent: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+  langs:
+  - csharp
+  - vb
+  name: OnReconnectAttempt(int)
+  nameWithType: IConnectionCallbacks.OnReconnectAttempt(int)
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectAttempt(int)
+  type: Method
+  source:
+    id: OnReconnectAttempt
+    path: ''
+    startLine: 1713
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: void OnReconnectAttempt(int attempt)
+    parameters:
+    - id: attempt
+      type: System.Int32
+    content.vb: Sub OnReconnectAttempt(attempt As Integer)
+  overload: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectAttempt*
+  nameWithType.vb: IConnectionCallbacks.OnReconnectAttempt(Integer)
+  fullName.vb: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectAttempt(Integer)
+  name.vb: OnReconnectAttempt(Integer)
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPing(System.EventArgs)
+  commentId: M:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPing(System.EventArgs)
+  id: OnPing(System.EventArgs)
+  parent: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+  langs:
+  - csharp
+  - vb
+  name: OnPing(EventArgs)
+  nameWithType: IConnectionCallbacks.OnPing(EventArgs)
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPing(System.EventArgs)
+  type: Method
+  source:
+    id: OnPing
+    path: ''
+    startLine: 1714
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: void OnPing(EventArgs e)
+    parameters:
+    - id: e
+      type: System.EventArgs
+    content.vb: Sub OnPing(e As EventArgs)
+  overload: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPing*
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPong(System.Int32)
+  commentId: M:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPong(System.Int32)
+  id: OnPong(System.Int32)
+  parent: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+  langs:
+  - csharp
+  - vb
+  name: OnPong(int)
+  nameWithType: IConnectionCallbacks.OnPong(int)
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPong(int)
+  type: Method
+  source:
+    id: OnPong
+    path: ''
+    startLine: 1715
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: void OnPong(int latencyMs)
+    parameters:
+    - id: latencyMs
+      type: System.Int32
+    content.vb: Sub OnPong(latencyMs As Integer)
+  overload: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPong*
+  nameWithType.vb: IConnectionCallbacks.OnPong(Integer)
+  fullName.vb: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPong(Integer)
+  name.vb: OnPong(Integer)
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectFailed(System.EventArgs)
+  commentId: M:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectFailed(System.EventArgs)
+  id: OnReconnectFailed(System.EventArgs)
+  parent: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+  langs:
+  - csharp
+  - vb
+  name: OnReconnectFailed(EventArgs)
+  nameWithType: IConnectionCallbacks.OnReconnectFailed(EventArgs)
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectFailed(System.EventArgs)
+  type: Method
+  source:
+    id: OnReconnectFailed
+    path: ''
+    startLine: 1716
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: void OnReconnectFailed(EventArgs e)
+    parameters:
+    - id: e
+      type: System.EventArgs
+    content.vb: Sub OnReconnectFailed(e As EventArgs)
+  overload: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectFailed*
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnected(System.Int32)
+  commentId: M:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnected(System.Int32)
+  id: OnReconnected(System.Int32)
+  parent: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+  langs:
+  - csharp
+  - vb
+  name: OnReconnected(int)
+  nameWithType: IConnectionCallbacks.OnReconnected(int)
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnected(int)
+  type: Method
+  source:
+    id: OnReconnected
+    path: ''
+    startLine: 1717
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: void OnReconnected(int attempts)
+    parameters:
+    - id: attempts
+      type: System.Int32
+    content.vb: Sub OnReconnected(attempts As Integer)
+  overload: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnected*
+  nameWithType.vb: IConnectionCallbacks.OnReconnected(Integer)
+  fullName.vb: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnected(Integer)
+  name.vb: OnReconnected(Integer)
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectError(System.Exception)
+  commentId: M:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectError(System.Exception)
+  id: OnReconnectError(System.Exception)
+  parent: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
+  langs:
+  - csharp
+  - vb
+  name: OnReconnectError(Exception)
+  nameWithType: IConnectionCallbacks.OnReconnectError(Exception)
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectError(System.Exception)
+  type: Method
+  source:
+    id: OnReconnectError
+    path: ''
+    startLine: 1718
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem.Interfaces
+  syntax:
+    content: void OnReconnectError(Exception e)
+    parameters:
+    - id: e
+      type: System.Exception
+    content.vb: Sub OnReconnectError(e As Exception)
+  overload: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectError*
+references:
+- uid: Klem.SocketChat.ChatSystem.Interfaces
+  commentId: N:Klem.SocketChat.ChatSystem.Interfaces
+  name: Klem.SocketChat.ChatSystem.Interfaces
+  nameWithType: Klem.SocketChat.ChatSystem.Interfaces
+  fullName: Klem.SocketChat.ChatSystem.Interfaces
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Interfaces
+    name: Interfaces
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.Interfaces
+    name: Interfaces
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnConnectedToMaster*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnConnectedToMaster
+  name: OnConnectedToMaster
+  nameWithType: IConnectionCallbacks.OnConnectedToMaster
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnConnectedToMaster
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+  commentId: T:Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+  parent: Klem.SocketChat.ChatSystem.DataClasses
+  name: SocketServerConnection
+  nameWithType: SocketServerConnection
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketServerConnection
+- uid: Klem.SocketChat.ChatSystem.DataClasses
+  commentId: N:Klem.SocketChat.ChatSystem.DataClasses
+  name: Klem.SocketChat.ChatSystem.DataClasses
+  nameWithType: Klem.SocketChat.ChatSystem.DataClasses
+  fullName: Klem.SocketChat.ChatSystem.DataClasses
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.DataClasses
+    name: DataClasses
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnecting*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnecting
+  name: OnDisconnecting
+  nameWithType: IConnectionCallbacks.OnDisconnecting
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnecting
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnected*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnected
+  name: OnDisconnected
+  nameWithType: IConnectionCallbacks.OnDisconnected
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnDisconnected
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectAttempt*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectAttempt
+  name: OnReconnectAttempt
+  nameWithType: IConnectionCallbacks.OnReconnectAttempt
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectAttempt
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPing*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPing
+  name: OnPing
+  nameWithType: IConnectionCallbacks.OnPing
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPing
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPong*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPong
+  name: OnPong
+  nameWithType: IConnectionCallbacks.OnPong
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnPong
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectFailed*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectFailed
+  name: OnReconnectFailed
+  nameWithType: IConnectionCallbacks.OnReconnectFailed
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectFailed
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnected*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnected
+  name: OnReconnected
+  nameWithType: IConnectionCallbacks.OnReconnected
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnected
+- uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectError*
+  commentId: Overload:Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectError
+  name: OnReconnectError
+  nameWithType: IConnectionCallbacks.OnReconnectError
+  fullName: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks.OnReconnectError
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
