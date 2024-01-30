@@ -6,14 +6,18 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class ConnectionTest
+namespace Klem.SocketChat.Tests
 {
-    [Test]
-    public async void TestConnection()
+    public class ConnectionTest
     {
-        await SocketIONetwork.Connect();
-        Assert.IsTrue(SocketIONetwork.IsConnected);
-        SocketIONetwork.Disconnect();
-        Assert.IsFalse(SocketIONetwork.IsConnected);
+        [Test]
+        public async void TestConnection()
+        {
+            await SocketIONetwork.Connect();
+            Assert.IsTrue(SocketIONetwork.IsConnected);
+            SocketIONetwork.Disconnect();
+            Assert.IsFalse(SocketIONetwork.IsConnected);
+        }
     }
+
 }

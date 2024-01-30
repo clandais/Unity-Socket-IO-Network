@@ -194,7 +194,7 @@ namespace Klem.SocketChat.ChatSystem
 
             Socket.OnUnityThread(SocketConnectionEvents.CONNECTION, OnConnectedToMaster);
             Socket.OnUnityThread(SocketConnectionEvents.ON_NEW_USER_CONNECTED_TO_MASTER, OnNewUserConnectedToMaster);
-            Socket.OnUnityThread(SocketConnectionEvents.DISCONNECTING, OnPlayerDisconnecting);
+            Socket.OnUnityThread(SocketConnectionEvents.USER_DISCONNECTING, OnPlayerDisconnecting);
 
             Socket.OnUnityThread("chat-message", OnGeneralChatMessage);
 
