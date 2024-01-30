@@ -29,9 +29,9 @@ jobs:
       - name: Dotnet Setup
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: 8.x
+          dotnet-version: 7.x
 
-      - run: dotnet tool update -g docfx
+      - run: dotnet tool install --global docfx --version 2.61.0
       - run: docfx .docfx_project/docfx.json
 
       - name: Upload artifact
