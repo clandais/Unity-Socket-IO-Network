@@ -9,5 +9,8 @@
     uidRegex: ^Klem\.SocketChat\.ChatSystem\.SimpleChatSample
     type: Namespace
 - exclude:
+    uidRegex: ^Klem\.SocketChat\.Tests
+    type: Namespace
+- exclude:
     uidRegex: .* # Every other namespaces are ignored
     type: Namespace
