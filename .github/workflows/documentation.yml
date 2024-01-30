@@ -6,47 +6,18 @@ on:
       - master
 
 jobs:
-  # Build the documentation
-  build:
-    runs-on: windows-latest # Required by DocFX
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        # with:
-        #   submodules: true
-
-      - name: Install DocFX
-        run: choco install -y docfx
-
-      - name: Build
-        run: docfx .docfx_project/docfx.json
-
-      # Upload the generated documentation
-      - name: Upload site artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: _site
-          path: _site # Must equals the 'build.dest' value on your docfx.json
-
-  # Deploy the generated documentation to the gh-pages branch
-  deploy:
-    needs: build
+  generate_and_publish_docs:
     runs-on: ubuntu-latest
+    name: Generate and publish the docs
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        # with:
-        #   submodules: true
-
-      # Download the generated documentation
-      - name: Download site artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: _site
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: _site
+    - uses: actions/checkout@v1
+      name: Checkout code
+    - uses: nunit/docfx-action@v2.4.0
+      name: Build Documentation
+      with:
+        args: .docfx_project/docfx.json
+    - uses: maxheld83/ghpages@master
+      name: Publish Documentation on GitHub Pages
+      env:
+        BUILD_DIR: _site # docfx's default output directory is _site
+        GH_PAT: ${{ secrets.GITHUB_TOKEN  }} # See https://github.com/maxheld83/ghpages
