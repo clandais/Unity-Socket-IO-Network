@@ -1,0 +1,15 @@
+{
+    "watch": [
+        ".docfx_project/**/*.md",
+        ".docfx_project/manual/toc.yml",
+        "../Assets/**/*.md*"
+        
+    ],
+    "ignore": [
+        "**/bin/**/*.*",
+        "**/obj/**/*.*",
+        "**/node_modules/**/*.*"
+    ],
+    "ext": "md,yml,csproj,cs,txt",
+    "exec": "docfx .docfx_project/docfx.json --serve"
+}
