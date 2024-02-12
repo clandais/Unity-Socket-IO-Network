@@ -1,5 +1,6 @@
 using Klem.SocketChat.ChatSystem;
 using Klem.SocketChat.ChatSystem.DataClasses;
+using Photon.Pun;
 using UnityEngine;
 
 namespace TestScripts
@@ -33,7 +34,8 @@ namespace TestScripts
         public override void OnRoomJoined(Room obj)
         {
             _room = obj;
-            _photonRoomCreation.ConnectToPhoton();
+            if (!PhotonNetwork.IsConnected)
+                _photonRoomCreation.ConnectToPhoton();
         }
 
 

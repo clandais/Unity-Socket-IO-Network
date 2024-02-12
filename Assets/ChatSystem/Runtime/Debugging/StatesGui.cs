@@ -165,7 +165,7 @@ namespace Klem.SocketChat.ChatSystem.Debugging
                 
                 if (GUILayout.Button("List all rooms"))
                 {
-                    SocketIONetwork.GetAllRooms(log: true);
+                    SocketIONetwork.GetAllRooms(100, true);
                 }
                 
                 if (GUILayout.Button("List all users"))
