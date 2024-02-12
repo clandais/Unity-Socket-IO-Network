@@ -21,6 +21,16 @@ namespace Klem.SocketChat.ChatSystem
 
 
     #region Properties Partial
+    
+    /// <summary>
+    ///   <para>The main class of the SocketIO Network.</para>
+    ///   <para>Contains all the methods to connect to the server, create and join rooms and send messages.</para>
+    /// <example>Get started by creating a new <see cref="Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings"/> ScriptableObject in your `Resources` folder.
+    ///   <code>
+    ///     SocketIONetwork.Connect();
+    ///   </code>
+    /// </example>
+    /// </summary>
     public static partial class SocketIONetwork
     {
         
@@ -57,15 +67,10 @@ namespace Klem.SocketChat.ChatSystem
         private static readonly ErrorChannelsContainer ErrorChannels = new ErrorChannelsContainer();
         private static readonly RoomChannelsContainer RoomChannels = new RoomChannelsContainer();
         private static readonly ChatMessageChannelsContainer ChatMessageChannels = new ChatMessageChannelsContainer();
-        
-        
-        private static readonly MessageChannel<SocketIOUser> NewUserConnectedToMasterMessageChannel = new MessageChannel<SocketIOUser>();
-        private static readonly MessageChannel<SocketIOUser> GetUserMessageChannel = new MessageChannel<SocketIOUser>();
-        private static readonly MessageChannel<ChatInvite> InviteRequestMessageChannel = new MessageChannel<ChatInvite>();
-
 
         /// <summary>
         ///     Add a MonoBehaviourSocketCallBacks to the callback channels.<br />
+        ///     Done automatically when the MonoBehaviourSocketCallBacks is added to the scene.<br />
         /// </summary>
         /// <param name="callbacks">
         ///     The MonoBehaviourSocketCallBacks to add to the callback channels.<br />
@@ -77,17 +82,13 @@ namespace Klem.SocketChat.ChatSystem
             AddCallbackTarget(ErrorChannels, callbacks);
             AddCallbackTarget(RoomChannels, callbacks);
             AddCallbackTarget(ChatMessageChannels, callbacks);
-            
-            NewUserConnectedToMasterMessageChannel.Subscribe(callbacks.OnNewUserConnectedToMaster);
-
-            GetUserMessageChannel.Subscribe(callbacks.OnGetUser);
-            InviteRequestMessageChannel.Subscribe(callbacks.OnChatInviteReceived);
 
         }
 
 
         /// <summary>
         ///     Remove a MonoBehaviourSocketCallBacks from the callback channels.<br />
+        ///     Done automatically when the MonoBehaviourSocketCallBacks is removed from the scene.<br />
         /// </summary>
         /// <param name="monoBehaviourSocketCallBacks">
         ///     The MonoBehaviourSocketCallBacks to remove from the callback channels.<br />
@@ -98,12 +99,6 @@ namespace Klem.SocketChat.ChatSystem
             RemoveCallbackTarget(ErrorChannels, monoBehaviourSocketCallBacks);
             RemoveCallbackTarget(RoomChannels, monoBehaviourSocketCallBacks);
             RemoveCallbackTarget(ChatMessageChannels, monoBehaviourSocketCallBacks);
-            
-            NewUserConnectedToMasterMessageChannel.Unsubscribe(monoBehaviourSocketCallBacks.OnNewUserConnectedToMaster);
-
-            GetUserMessageChannel.Unsubscribe(monoBehaviourSocketCallBacks.OnGetUser);
-            InviteRequestMessageChannel.Unsubscribe(monoBehaviourSocketCallBacks.OnChatInviteReceived);
-
         }
         #endregion
 
@@ -121,7 +116,7 @@ namespace Klem.SocketChat.ChatSystem
 
         #region Socket Methods
         /// <summary>
-        ///     Connect to the socket server using the settings provided in the ChatSettings ScriptableObject<br />
+        ///     Connect to the socket server using the settings provided in the ChatSettings ScriptableObject (that must be in the Resources folder)<br />
         ///     If the settings are not set, it will throw an exception. <br />
         ///     If the connection is successful, it will set the Socket property to the connected socket and setup the callbacks
         ///     channels.
@@ -195,9 +190,7 @@ namespace Klem.SocketChat.ChatSystem
             Socket.OnUnityThread(SocketConnectionEvents.CONNECTION, OnConnectedToMaster);
             Socket.OnUnityThread(SocketConnectionEvents.ON_NEW_USER_CONNECTED_TO_MASTER, OnNewUserConnectedToMaster);
             Socket.OnUnityThread(SocketConnectionEvents.USER_DISCONNECTING, OnPlayerDisconnecting);
-
-            Socket.OnUnityThread("chat-message", OnGeneralChatMessage);
-
+            
             #region Room Events
             Socket.OnUnityThread(SocketRoomEventsIn.CREATE_ROOM_FAILED, OnCreateRoomFailed);
             Socket.OnUnityThread(SocketRoomEventsIn.ON_ROOM_CREATED, OnNewRoomCreated);
@@ -210,8 +203,6 @@ namespace Klem.SocketChat.ChatSystem
             
             Socket.OnUnityThread(SocketMessageEventsIn.ON_GENERAL_MESSAGE_RECEIVED, OnGeneralChatMessage);
             Socket.OnUnityThread(SocketMessageEventsIn.ON_ROOM_MESSAGE_RECEIVED, OnRoomChatMessage);
-            
-            Socket.OnUnityThread("invite-request", OnInviteRequest);
 
         }
 
@@ -296,11 +287,40 @@ namespace Klem.SocketChat.ChatSystem
         public static async Task<SocketIOUser> GetChatUser(string chatId)
         {
             SocketIOUser user = null;
-            await Socket.EmitAsync("get-user", response => { user = response.GetValue<SocketIOUser>(); }, chatId);
+            await Socket.EmitAsync("get-user", response =>
+            {
+                user = response.GetValue<SocketIOUser>();
+            }, chatId);
             return user;
         }
 
         #region Room Methods
+        
+        /// <summary>
+        ///     GetAllRooms from the server.<br />
+        /// </summary>
+        /// <returns>
+        ///     The list of rooms.<br />
+        /// </returns>
+        public static async Task<Room[]> GetAllRooms(int maxRooms = 100, bool log = false)
+        {
+            Room[] rooms = null;
+            await Socket.EmitAsync(SocketRoomEventsOut.ROOM_GET_ALL,
+                response =>
+                {
+                    rooms = response.GetValue<Room[]>();
+                }, maxRooms);
+
+            if (log)
+            {
+                for (int i = 0; i < rooms.Length; i++)
+                {
+                    Debug.Log($"{LogPrefix} room {i} {rooms[i]}");
+                }
+            }
+            
+            return rooms;
+        }
 
         public static void JoinRandomRoom()
         {
@@ -340,36 +360,19 @@ namespace Klem.SocketChat.ChatSystem
             }
         }
         
-        /// <summary>
-        ///     GetAllRooms from the server.<br />
-        /// </summary>
-        /// <returns>
-        ///     The list of rooms.<br />
-        /// </returns>
-        public static async Task<Room[]> GetAllRooms(bool log = false)
-        {
-            
-            if (ChatSettings.Instance.EnableLogging) Debug.Log($"{LogPrefix} get-all-rooms");
-            
-            Room[] rooms = null;
-            await Socket.EmitAsync(SocketRoomEventsOut.ROOM_GET_ALL, response => { rooms = response.GetValue<Room[]>(); });
 
-            if (log)
-            {
-                for (int i = 0; i < rooms.Length; i++)
-                {
-                    Debug.Log($"{LogPrefix} room {i} {rooms[i].Name}");
-                }
-            }
-            
-            return rooms;
-        }
         
         #endregion
 
+
+
+
+        public static void UpdateUser()
+        {
+            if (ChatSettings.Instance.EnableLogging) Debug.Log($"{LogPrefix} update-user {User}");
+            Socket.Emit(SocketUserEventsOut.USER_UPDATE, User);
+        }
         
-
-
         public static void UpdateUser(SocketIOUser user)
         {
             if (ChatSettings.Instance.EnableLogging) Debug.Log($"{LogPrefix} update-user {user}");
@@ -405,7 +408,7 @@ namespace Klem.SocketChat.ChatSystem
             CurrentRoom = null;
             User.ChatId = null;
             User.Color = null;
-            User.PhotonId = null;
+            User.OtherIds = null;
             
             ConnectionChannels.DisconnectMessageChannel.Publish(e);
         }
@@ -464,6 +467,7 @@ namespace Klem.SocketChat.ChatSystem
 
             SocketServerConnection connection = data.GetValue<SocketServerConnection>();
             User.ChatId = connection.ChatId;
+            User.OtherIds = new List<string>();
             ConnectionChannels.ConnectionMessageChannel.Publish(connection);
         }
         
@@ -486,9 +490,8 @@ namespace Klem.SocketChat.ChatSystem
 
         private static void OnNewUserConnectedToMaster(SocketIOResponse data)
         {
-            if (ChatSettings.Instance.EnableLogging) Debug.Log($"{LogPrefix} on-new-user-connected-to-master response {data.GetValue<SocketIOUser>()}");
-            
-            NewUserConnectedToMasterMessageChannel.Publish(data.GetValue<SocketIOUser>());
+            if (ChatSettings.Instance.EnableLogging) Debug.Log($"{LogPrefix} on-new-user-connected-to-master response {data.GetValue<SocketIOUser>().Username}");
+            ConnectionChannels.NewUserConnectedToMasterMessageChannel.Publish(data.GetValue<SocketIOUser>());
         }
         #endregion
 
@@ -526,16 +529,6 @@ namespace Klem.SocketChat.ChatSystem
         {
             if (ChatSettings.Instance.EnableLogging) Debug.Log($"{LogPrefix} room-chat-message response {data.GetValue<ChatMessage>()}");
             ChatMessageChannels.RoomChatMessageChannel.Publish(data.GetValue<ChatMessage>());
-        }
-
-        private static void OnInviteRequest(SocketIOResponse data)
-        {
-            ChatInvite invite = data.GetValue<ChatInvite>();
-
-            if (invite.To.ChatId == User.ChatId)
-            {
-                InviteRequestMessageChannel.Publish(invite);
-            }
         }
 
         private static void OnRoomListUpdated(SocketIOResponse data)
@@ -609,13 +602,14 @@ namespace Klem.SocketChat.ChatSystem
             RoomChannels.RoomLeftMessageChannel.Publish(obj.GetValue<Room>());
         }
         
-        private static void OnRoomLeftByOtherUser(SocketIOResponse obj)
+        private static async void OnRoomLeftByOtherUser(SocketIOResponse obj)
         {
             if (ChatSettings.Instance.EnableLogging) Debug.Log($"{LogPrefix} on-room-left-by-other-user response {obj.GetValue<RoomAndUser>()}");
             
             CurrentRoom = obj.GetValue<RoomAndUser>().Room;
             
             RoomChannels.RoomLeftByOtherUserMessageChannel.Publish(obj.GetValue<RoomAndUser>());
+            
         }
         
         #endregion

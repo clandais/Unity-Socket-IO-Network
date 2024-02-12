@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Klem.SocketChat.ChatSystem.Infra
 {
     
-    public class UpdateRunner : MonoBehaviour
+    internal class UpdateRunner : MonoBehaviour
     {
         
         private readonly Queue<Action> _pendingHandlers = new Queue<Action>();

@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Klem.SocketChat.ChatSystem.DataClasses
 {
     [System.Serializable]
@@ -5,7 +7,7 @@ namespace Klem.SocketChat.ChatSystem.DataClasses
     {
         public string ChatId;
         public string Username;
-        public string PhotonId;
+        public List<string> OtherIds = new List<string>();
         public string Color;
         public string RoomId;
     }

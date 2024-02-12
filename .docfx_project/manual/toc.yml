@@ -1,2 +1,6 @@
 - name: Getting Started
   href: getting-started.md
+- name: MonoBehaviourSocketCallBacks
+  href: monobehaviour-socket-callbacks.md
+- name: Pairing with Photon PUN
+  href: pairing-with-photon-pun.md

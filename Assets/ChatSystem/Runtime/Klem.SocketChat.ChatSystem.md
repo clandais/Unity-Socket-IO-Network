@@ -1,5 +1,4 @@
 ﻿---
 uid: Klem.SocketChat.ChatSystem
-summary: Chat system for Unity3D
-conceptual: <p><b>Content</b> in Markdown</p>
+summary: This namespace contains the two main classes of the system.
 ---

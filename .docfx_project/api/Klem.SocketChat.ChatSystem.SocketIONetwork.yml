@@ -10,7 +10,7 @@ items:
   - Klem.SocketChat.ChatSystem.SocketIONetwork.CreateRoom(Klem.SocketChat.ChatSystem.DataClasses.Room)
   - Klem.SocketChat.ChatSystem.SocketIONetwork.CurrentRoom
   - Klem.SocketChat.ChatSystem.SocketIONetwork.Disconnect
-  - Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms(System.Boolean)
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms(System.Int32,System.Boolean)
   - Klem.SocketChat.ChatSystem.SocketIONetwork.GetChatUser(System.String)
   - Klem.SocketChat.ChatSystem.SocketIONetwork.InRoom
   - Klem.SocketChat.ChatSystem.SocketIONetwork.IsConnected
@@ -23,6 +23,7 @@ items:
   - Klem.SocketChat.ChatSystem.SocketIONetwork.SendInvite(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
   - Klem.SocketChat.ChatSystem.SocketIONetwork.SendRoomChatMessage(System.String)
   - Klem.SocketChat.ChatSystem.SocketIONetwork.TimeSpanSinceLastPing
+  - Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser
   - Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
   - Klem.SocketChat.ChatSystem.SocketIONetwork.Uri
   - Klem.SocketChat.ChatSystem.SocketIONetwork.User
@@ -36,10 +37,12 @@ items:
   source:
     id: SocketIONetwork
     path: ''
-    startLine: 313
+    startLine: 293
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
+  summary: "\n<p>The main class of the SocketIO Network.</p>\n<p>Contains all the methods to connect to the server, create and join rooms and send messages.</p>\n<example>Get started by creating a new <xref href=\"Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings\" data-throw-if-not-resolved=\"false\"></xref> ScriptableObject in your `Resources` folder.\n<pre><code>  SocketIONetwork.Connect();</code></pre>\n</example>\n"
+  example: []
   syntax:
     content: public static class SocketIONetwork
     content.vb: Public Module SocketIONetwork
@@ -59,7 +62,7 @@ items:
   source:
     id: IsConnected
     path: ''
-    startLine: 226
+    startLine: 221
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -84,7 +87,7 @@ items:
   source:
     id: InRoom
     path: ''
-    startLine: 227
+    startLine: 222
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -109,7 +112,7 @@ items:
   source:
     id: User
     path: ''
-    startLine: 229
+    startLine: 224
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -134,7 +137,7 @@ items:
   source:
     id: CurrentRoom
     path: ''
-    startLine: 232
+    startLine: 227
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -159,7 +162,7 @@ items:
   source:
     id: TimeSpanSinceLastPing
     path: ''
-    startLine: 244
+    startLine: 239
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -184,7 +187,7 @@ items:
   source:
     id: Uri
     path: ''
-    startLine: 246
+    startLine: 241
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -209,11 +212,11 @@ items:
   source:
     id: AddCallbackTarget
     path: ''
-    startLine: 272
+    startLine: 262
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
-  summary: "\nAdd a MonoBehaviourSocketCallBacks to the callback channels.<br />\n"
+  summary: "\nAdd a MonoBehaviourSocketCallBacks to the callback channels.<br />\nDone automatically when the MonoBehaviourSocketCallBacks is added to the scene.<br />\n"
   example: []
   syntax:
     content: public static void AddCallbackTarget(MonoBehaviourSocketCallBacks callbacks)
@@ -237,11 +240,11 @@ items:
   source:
     id: RemoveCallbackTarget
     path: ''
-    startLine: 294
+    startLine: 280
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
-  summary: "\nRemove a MonoBehaviourSocketCallBacks from the callback channels.<br />\n"
+  summary: "\nRemove a MonoBehaviourSocketCallBacks from the callback channels.<br />\nDone automatically when the MonoBehaviourSocketCallBacks is removed from the scene.<br />\n"
   example: []
   syntax:
     content: public static void RemoveCallbackTarget(MonoBehaviourSocketCallBacks monoBehaviourSocketCallBacks)
@@ -265,11 +268,11 @@ items:
   source:
     id: Connect
     path: ''
-    startLine: 328
+    startLine: 308
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
-  summary: "\nConnect to the socket server using the settings provided in the ChatSettings ScriptableObject<br />\nIf the settings are not set, it will throw an exception. <br />\nIf the connection is successful, it will set the Socket property to the connected socket and setup the callbacks\nchannels.\n"
+  summary: "\nConnect to the socket server using the settings provided in the ChatSettings ScriptableObject (that must be in the Resources folder)<br />\nIf the settings are not set, it will throw an exception. <br />\nIf the connection is successful, it will set the Socket property to the connected socket and setup the callbacks\nchannels.\n"
   example: []
   syntax:
     content: public static Task Connect()
@@ -291,7 +294,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 420
+    startLine: 396
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -315,7 +318,7 @@ items:
   source:
     id: SendGeneralChatMessage
     path: ''
-    startLine: 445
+    startLine: 421
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -348,7 +351,7 @@ items:
   source:
     id: SendRoomChatMessage
     path: ''
-    startLine: 461
+    startLine: 437
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -378,7 +381,7 @@ items:
   source:
     id: ListIds
     path: ''
-    startLine: 475
+    startLine: 451
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -408,7 +411,7 @@ items:
   source:
     id: GetChatUser
     path: ''
-    startLine: 495
+    startLine: 471
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -424,6 +427,41 @@ items:
   nameWithType.vb: SocketIONetwork.GetChatUser(String)
   fullName.vb: Klem.SocketChat.ChatSystem.SocketIONetwork.GetChatUser(String)
   name.vb: GetChatUser(String)
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms(System.Int32,System.Boolean)
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms(System.Int32,System.Boolean)
+  id: GetAllRooms(System.Int32,System.Boolean)
+  parent: Klem.SocketChat.ChatSystem.SocketIONetwork
+  langs:
+  - csharp
+  - vb
+  name: GetAllRooms(int, bool)
+  nameWithType: SocketIONetwork.GetAllRooms(int, bool)
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms(int, bool)
+  type: Method
+  source:
+    id: GetAllRooms
+    path: ''
+    startLine: 489
+  assemblies:
+  - cs.temp.dll
+  namespace: Klem.SocketChat.ChatSystem
+  summary: "\nGetAllRooms from the server.<br />\n"
+  example: []
+  syntax:
+    content: public static Task<Room[]> GetAllRooms(int maxRooms = 100, bool log = false)
+    parameters:
+    - id: maxRooms
+      type: System.Int32
+    - id: log
+      type: System.Boolean
+    return:
+      type: Global.Task{Klem.SocketChat.ChatSystem.DataClasses.Room[]}
+      description: "\nThe list of rooms.<br />\n"
+    content.vb: Public Shared Function GetAllRooms(maxRooms As Integer = 100, log As Boolean = False) As Task(Of Room())
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms*
+  nameWithType.vb: SocketIONetwork.GetAllRooms(Integer, Boolean)
+  fullName.vb: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms(Integer, Boolean)
+  name.vb: GetAllRooms(Integer, Boolean)
 - uid: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom
   commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom
   id: JoinRandomRoom
@@ -438,7 +476,7 @@ items:
   source:
     id: JoinRandomRoom
     path: ''
-    startLine: 504
+    startLine: 509
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -460,7 +498,7 @@ items:
   source:
     id: JoinRoom
     path: ''
-    startLine: 510
+    startLine: 515
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -485,7 +523,7 @@ items:
   source:
     id: CreateRoom
     path: ''
-    startLine: 523
+    startLine: 528
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -513,7 +551,7 @@ items:
   source:
     id: LeaveRoom
     path: ''
-    startLine: 533
+    startLine: 538
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -528,39 +566,28 @@ items:
   exceptions:
   - type: System.NotImplementedException
     commentId: T:System.NotImplementedException
-- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms(System.Boolean)
-  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms(System.Boolean)
-  id: GetAllRooms(System.Boolean)
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser
+  commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser
+  id: UpdateUser
   parent: Klem.SocketChat.ChatSystem.SocketIONetwork
   langs:
   - csharp
   - vb
-  name: GetAllRooms(bool)
-  nameWithType: SocketIONetwork.GetAllRooms(bool)
-  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms(bool)
+  name: UpdateUser()
+  nameWithType: SocketIONetwork.UpdateUser()
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser()
   type: Method
   source:
-    id: GetAllRooms
+    id: UpdateUser
     path: ''
-    startLine: 548
+    startLine: 554
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
-  summary: "\nGetAllRooms from the server.<br />\n"
-  example: []
   syntax:
-    content: public static Task<Room[]> GetAllRooms(bool log = false)
-    parameters:
-    - id: log
-      type: System.Boolean
-    return:
-      type: Global.Task{Klem.SocketChat.ChatSystem.DataClasses.Room[]}
-      description: "\nThe list of rooms.<br />\n"
-    content.vb: Public Shared Function GetAllRooms(log As Boolean = False) As Task(Of Room())
-  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms*
-  nameWithType.vb: SocketIONetwork.GetAllRooms(Boolean)
-  fullName.vb: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms(Boolean)
-  name.vb: GetAllRooms(Boolean)
+    content: public static void UpdateUser()
+    content.vb: Public Shared Sub UpdateUser()
+  overload: Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser*
 - uid: Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
   commentId: M:Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
   id: UpdateUser(Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser)
@@ -575,7 +602,7 @@ items:
   source:
     id: UpdateUser
     path: ''
-    startLine: 572
+    startLine: 560
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -600,7 +627,7 @@ items:
   source:
     id: SendInvite
     path: ''
-    startLine: 823
+    startLine: 802
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem
@@ -612,6 +639,12 @@ items:
     content.vb: Public Shared Sub SendInvite(toUser As SocketIOUser)
   overload: Klem.SocketChat.ChatSystem.SocketIONetwork.SendInvite*
 references:
+- uid: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  commentId: T:Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
+  parent: Klem.SocketChat.ChatSystem.SettingsScript
+  name: ChatSettings
+  nameWithType: ChatSettings
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript.ChatSettings
 - uid: Klem.SocketChat.ChatSystem
   commentId: N:Klem.SocketChat.ChatSystem
   name: Klem.SocketChat.ChatSystem
@@ -645,6 +678,35 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: Klem.SocketChat.ChatSystem.SettingsScript
+  commentId: N:Klem.SocketChat.ChatSystem.SettingsScript
+  name: Klem.SocketChat.ChatSystem.SettingsScript
+  nameWithType: Klem.SocketChat.ChatSystem.SettingsScript
+  fullName: Klem.SocketChat.ChatSystem.SettingsScript
+  spec.csharp:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.SettingsScript
+    name: SettingsScript
+  spec.vb:
+  - uid: Klem
+    name: Klem
+  - name: .
+  - uid: Klem.SocketChat
+    name: SocketChat
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem
+    name: ChatSystem
+  - name: .
+  - uid: Klem.SocketChat.ChatSystem.SettingsScript
+    name: SettingsScript
 - uid: System
   commentId: N:System
   isExternal: true
@@ -882,34 +944,21 @@ references:
   - uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
     name: SocketIOUser
   - name: )
-- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom*
-  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom
-  name: JoinRandomRoom
-  nameWithType: SocketIONetwork.JoinRandomRoom
-  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom
-- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRoom*
-  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRoom
-  name: JoinRoom
-  nameWithType: SocketIONetwork.JoinRoom
-  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRoom
-- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.CreateRoom*
-  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.CreateRoom
-  name: CreateRoom
-  nameWithType: SocketIONetwork.CreateRoom
-  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.CreateRoom
-- uid: System.NotImplementedException
-  commentId: T:System.NotImplementedException
-  isExternal: true
-- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.LeaveRoom*
-  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.LeaveRoom
-  name: LeaveRoom
-  nameWithType: SocketIONetwork.LeaveRoom
-  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.LeaveRoom
 - uid: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms*
   commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms
   name: GetAllRooms
   nameWithType: SocketIONetwork.GetAllRooms
   fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.GetAllRooms
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: Global.Task{Klem.SocketChat.ChatSystem.DataClasses.Room[]}
   commentId: '!:Global.Task{Klem.SocketChat.ChatSystem.DataClasses.Room[]}'
   definition: Global.Task`1
@@ -941,6 +990,29 @@ references:
   - name: (
   - name: )
   - name: )
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom
+  name: JoinRandomRoom
+  nameWithType: SocketIONetwork.JoinRandomRoom
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRandomRoom
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRoom*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRoom
+  name: JoinRoom
+  nameWithType: SocketIONetwork.JoinRoom
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.JoinRoom
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.CreateRoom*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.CreateRoom
+  name: CreateRoom
+  nameWithType: SocketIONetwork.CreateRoom
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.CreateRoom
+- uid: System.NotImplementedException
+  commentId: T:System.NotImplementedException
+  isExternal: true
+- uid: Klem.SocketChat.ChatSystem.SocketIONetwork.LeaveRoom*
+  commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.LeaveRoom
+  name: LeaveRoom
+  nameWithType: SocketIONetwork.LeaveRoom
+  fullName: Klem.SocketChat.ChatSystem.SocketIONetwork.LeaveRoom
 - uid: Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser*
   commentId: Overload:Klem.SocketChat.ChatSystem.SocketIONetwork.UpdateUser
   name: UpdateUser

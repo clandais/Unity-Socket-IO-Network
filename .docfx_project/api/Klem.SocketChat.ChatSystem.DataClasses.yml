@@ -22,7 +22,6 @@ items:
 references:
 - uid: Klem.SocketChat.ChatSystem.DataClasses.ChatInvite
   commentId: T:Klem.SocketChat.ChatSystem.DataClasses.ChatInvite
-  parent: Klem.SocketChat.ChatSystem.DataClasses
   name: ChatInvite
   nameWithType: ChatInvite
   fullName: Klem.SocketChat.ChatSystem.DataClasses.ChatInvite

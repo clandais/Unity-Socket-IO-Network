@@ -5,6 +5,10 @@ using UnityEngine;
 
 namespace Klem.SocketChat.ChatSystem
 {
+    /// <summary>
+    ///   This class is a MonoBehaviour that implements all the callback interfaces of the Chat System.<br/>
+    ///   It is similar to the MonoBehaviourPunCallbacks class of Photon Unity Networking.
+    /// </summary>
     public class MonoBehaviourSocketCallBacks : MonoBehaviour,
         IConnectionCallbacks,
         IErrorCallbacks,
@@ -28,7 +32,7 @@ namespace Klem.SocketChat.ChatSystem
         }
 
 
-        #region Connection Callbacks
+        #region IConnectionCallbacks
         /// <summary>
         ///     Called when the client is connected to the server.
         /// </summary>
@@ -71,14 +75,24 @@ namespace Klem.SocketChat.ChatSystem
         /// </summary>
         /// <param name="obj"></param>
         public virtual void OnPong(int obj) { }
-        #endregion
 
         /// <summary>
-        ///     Called when an error is thrown by the server.
+        ///     Called when the client fails to reconnect to the server.
         /// </summary>
-        /// <param name="obj"></param>
-        public virtual void OnError(string obj) { }
-
+        /// <param name="e"></param>
+        public virtual void OnReconnectFailed(EventArgs e) { }
+        
+        /// <summary>
+        ///     Called when the client reconnects to the server.
+        /// </summary>
+        /// <param name="attempts"></param>
+        public virtual void OnReconnected(int attempts) { }
+        
+        /// <summary>
+        ///     Called when the client receives an error upon reconnecting.
+        /// </summary>
+        /// <param name="e"></param>
+        public virtual void OnReconnectError(Exception e) { }
 
         /// <summary>
         ///     Called when a new user is connected to the master server.
@@ -86,100 +100,69 @@ namespace Klem.SocketChat.ChatSystem
         /// <param name="user"></param>
         public virtual void OnNewUserConnectedToMaster(SocketIOUser user) { }
 
+        #endregion
 
-
-        /// <summary>
-        ///     Called when a user leaves a room.
-        /// </summary>
-        /// <param name="andUser"></param>
-        public virtual void OnUserLeftRoom(RoomAndUser andUser) { }
-
-        public virtual void OnGetUser(SocketIOUser user) { }
-
-        public virtual void OnChatInviteReceived(ChatInvite invite) { }
-
-        /// <summary>
-        ///     Called when the room list is updated on the server.
-        /// </summary>
-        /// <param name="obj"></param>
-        public virtual void OnRoomListChanged(Room[] obj) { }
-
-        /// <summary>
-        ///     Called when a room is created.
-        /// </summary>
-        /// <param name="obj"></param>
-        public virtual void OnRoomCreated(Room obj) { }
-
-        /// <summary>
-        ///     Called when a room creation failed.
-        /// </summary>
-        /// <param name="obj"></param>
-        public virtual void OnCreateRoomFailed(string obj) { }
+        #region IErroCallbacks
 
         /// <summary>
         ///     Called on any server error message.
         /// </summary>
         /// <param name="msg"></param>
         public virtual void OnServerErrorMessage(string msg) { }
-
+        
         /// <summary>
-        ///     Called when the client fails to reconnect to the server.
+        ///     Called when an error is thrown by the server.
         /// </summary>
-        /// <param name="e"></param>
-        public virtual void OnReconnectFailed(EventArgs e) { }
+        /// <param name="obj"></param>
+        public virtual void OnError(string obj) { }
+        #endregion
 
-        /// <summary>
-        ///     Called when the client reconnects to the server.
-        /// </summary>
-        /// <param name="attempts"></param>
-        public virtual void OnReconnected(int attempts) { }
-
-        /// <summary>
-        ///     Called when the client receives an error upon reconnecting.
-        /// </summary>
-        /// <param name="e"></param>
-        public virtual void OnReconnectError(Exception e) { }
-
-
+        #region IRoomCallbacks
         /// <summary>
         ///     Called when the client receives a room list update.
         /// </summary>
         /// <param name="rooms"></param>
         public virtual void OnRoomListUpdate(Room[] rooms) { }
         
-
+        /// <summary>
+        ///     Called when a room is created.
+        /// </summary>
+        /// <param name="obj"></param>
+        public virtual void OnRoomCreated(Room obj) { }
+        
         /// <summary>
         ///     Called when the client joins a room.
         /// </summary>
         /// <param name="room"></param>
         public virtual void OnRoomJoined(Room room) { }
-
-        /// <summary>
-        ///   Called when a room creation failed.
-        /// </summary>
-        /// <param name="reason"></param>
-        public virtual void OnRoomCreationFailed(string reason) { }
         
-
         /// <summary>
         ///     Called when a user joins a room.
         /// </summary>
         /// <param name="andUser"></param>
         public virtual void OnRoomUserJoined(RoomAndUser andUser) { }
         
+        /// <summary>
+        ///   Called when a room creation failed.
+        /// </summary>
+        /// <param name="reason"></param>
+        public virtual void OnRoomCreationFailed(string reason) { }
         
         /// <summary>
         ///   Called when the client leaves a room.
         /// </summary>
         /// <param name="room"></param>
         public virtual void OnRoomLeft(Room room) {}
-
+        
         /// <summary>
         ///  Called when a user leaves a room.
         /// </summary>
         /// <param name="room"></param>
         public virtual void OnRoomLeftByOtherUser(RoomAndUser room) { }
+        
+        #endregion
 
+        #region IChatMessageCallbacks
         /// <summary>
         ///   Called when the client receives a general chat message.
         /// </summary>
@@ -195,5 +178,7 @@ namespace Klem.SocketChat.ChatSystem
         ///   The message object containing the sender and the message. See : <see cref="ChatMessage" />
         /// </param>
         public virtual void OnRoomChatMessage(ChatMessage message) { }
+        #endregion
+        
     }
 }

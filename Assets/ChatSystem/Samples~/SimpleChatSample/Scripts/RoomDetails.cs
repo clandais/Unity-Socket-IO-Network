@@ -1,82 +1,94 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Klem.SocketChat.ChatSystem.DataClasses;
-using TMPro;
+using Klem.SocketChat.ChatSystem.SimpleChatSample.Utils;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Klem.SocketChat.ChatSystem.SimpleChatSample
 {
-    [AddComponentMenu("SocketChat/SimpleChatSample/RoomDetails")]
-    public class RoomDetails : MonoBehaviourSocketCallBacks
+    [AddComponentMenu("SocketChat/SimpleChatSample/RoomListPanel")]
+    public class RoomListPanel : MonoBehaviourSocketCallBacks
     {
-        [SerializeField] private TMP_Text roomDetailsText;
-        [SerializeField] private Button joinRoomButton;
+        [SerializeField] private ScrollRect roomListScrollView;
+        [SerializeField] private RoomDetails roomDetailsPrefab;
+        
+        [SerializeField] private GameObject spinnerGo;
+        
+        private CanvasGroup _canvasGroup;
 
-        private Room _room;
-
+        private Room[] _rooms;
+        private List<RoomDetails> _roomDetails = new List<RoomDetails>();
+        
+        private void Awake()
+        {
+            _canvasGroup = GetComponent<CanvasGroup>();
+        }
 
         private void Start()
         {
-            joinRoomButton.onClick.AddListener(JoinRoom);
+            _canvasGroup.Toggle(false);
+            spinnerGo.SetActive(false);
+        }
+        
+        public async Task Refresh()
+        {
+            spinnerGo.SetActive(true);
             
-            if (_room != null)
+            StartCoroutine(WaitForSpinnerActive());
+            
+            _rooms = await SocketIONetwork.GetAllRooms();
+            FormatRoomList();
+            
+            spinnerGo.SetActive(false);
+        }
+
+        public override void OnRoomListUpdate(Room[] rooms)
+        {
+            Debug.Log("OnRoomListUpdate");
+            
+            _rooms = rooms;
+            FormatRoomList();
+        }
+
+        private IEnumerator WaitForSpinnerActive()
+        {
+            while (spinnerGo.activeSelf)
             {
-                roomDetailsText.text = $"{_room.Name} ({_room.PlayerCount}/{_room.MaxPlayers})";
-            
-                if (_room.PlayerCount >= _room.MaxPlayers)
-                {
-                    joinRoomButton.interactable = false;
-                }
-            
-                if (_room.PlayerCount == 0)
-                {
-                    Destroy(gameObject);
-                    return;
-                }
-
-                foreach (SocketIOUser socketIOUser in _room.Players)
-                {
-                    if (socketIOUser.ChatId == SocketIONetwork.User.ChatId)
-                    {
-                        joinRoomButton.interactable = false;
-                        break;
-                    }
-                }
-
+                yield return new WaitForEndOfFrame();
             }
         }
 
-        private void OnDestroy()
+        private void FormatRoomList()
         {
-            joinRoomButton.onClick.RemoveListener(JoinRoom);
-        }
+            var text = "";
 
-        public void SetRoom(Room room)
-        {
-            _room = room;
-        }
-
-        private void JoinRoom()
-        {
-            SocketIONetwork.JoinRoom(_room);
-        }
-
-        public override async void OnRoomUserJoined(RoomAndUser andUser)
-        {
-
-
-            if (andUser.User.ChatId == SocketIONetwork.User.ChatId)
+            for (int i = 0; i < _roomDetails.Count; i++)
             {
-                SocketIONetwork.User.RoomId = andUser.Room.Name;
-                SocketIONetwork.UpdateUser(SocketIONetwork.User);
-                joinRoomButton.interactable = false;
+                if (_roomDetails[i] != null)
+                    Destroy(_roomDetails[i].gameObject);
+            }
+            _roomDetails.Clear();
+
+            if (_rooms == null || _rooms.Length == 0)
+            {
+                roomListScrollView.content.ForceUpdateRectTransforms();
+                return;
             }
             
-            if (andUser.Room.Name == _room.Name)
+            
+            for (int i = 0; i < _rooms.Length; i++)
             {
-                _room = andUser.Room;
-                roomDetailsText.text = $"{_room.Name} ({_room.PlayerCount}/{_room.MaxPlayers})";
+                var instance = Instantiate(roomDetailsPrefab, roomListScrollView.content);
+                instance.SetRoom(_rooms[i]);
+                _roomDetails.Add(instance);
             }
+            
+            roomListScrollView.content.ForceUpdateRectTransforms();
         }
+
+
     }
 }

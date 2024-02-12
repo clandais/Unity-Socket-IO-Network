@@ -2,7 +2,7 @@
 
 namespace Klem.SocketChat.ChatSystem.Infra
 {
-    public class DisposableSubscription<T> : IDisposable
+    internal class DisposableSubscription<T> : IDisposable
     {
         private Action<T> _handler;
         private bool _isDisposed;

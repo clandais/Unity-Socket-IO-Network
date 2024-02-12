@@ -73,23 +73,13 @@ namespace Klem.SocketChat.ChatSystem.SimpleChatSample
         {
             _infoQueue.Enqueue($"User {andUser.User.Username} joined room {andUser.Room.Name}");
         }
-
-        public override void OnUserLeftRoom(RoomAndUser andUser)
-        {
-            _infoQueue.Enqueue($"User {andUser.User.Username} left room {andUser.Room.Name}");
-        }
+        
 
         public override void OnNewUserConnectedToMaster(SocketIOUser user)
         {
             _infoQueue.Enqueue($"New user connected to master : {user.Username}");
         }
-
-
-        public override void OnRoomListChanged(Room[] obj)
-        {
-            _infoQueue.Enqueue($"Room list changed : {obj.Length} rooms");
-        }
-
+        
         public override void OnRoomLeft(Room room)
         {
             _infoQueue.Enqueue($"Left room : {room.Name}");

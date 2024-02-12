@@ -17,7 +17,7 @@ items:
   source:
     id: ChatMessage
     path: ''
-    startLine: 1199
+    startLine: 1188
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.DataClasses
@@ -50,7 +50,7 @@ items:
   source:
     id: Sender
     path: ''
-    startLine: 1202
+    startLine: 1191
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.DataClasses
@@ -73,7 +73,7 @@ items:
   source:
     id: Message
     path: ''
-    startLine: 1203
+    startLine: 1192
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.DataClasses

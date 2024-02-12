@@ -3,16 +3,11 @@ using Klem.SocketChat.ChatSystem.DataClasses;
 
 namespace Klem.SocketChat.ChatSystem.Interfaces
 {
-
-    public interface ICallbacksContainer
-    {
-        void AddCallbackTarget(MonoBehaviourSocketCallBacks target);
-        void RemoveCallbackTarget(MonoBehaviourSocketCallBacks target);
-    }
     
-    public interface IConnectionCallbacks
+    internal interface IConnectionCallbacks
     {
         void OnConnectedToMaster(SocketServerConnection connection);
+        void OnNewUserConnectedToMaster(SocketIOUser user);
         void OnDisconnecting(string reason);
         void OnDisconnected(string reason);
         void OnReconnectAttempt(int attempt);
@@ -23,18 +18,13 @@ namespace Klem.SocketChat.ChatSystem.Interfaces
         void OnReconnectError(Exception e);
     }
     
-    public interface IErrorCallbacks
+    internal interface IErrorCallbacks
     {
         void OnServerErrorMessage(string message);
         void OnError(string error);
     }
     
-    public interface IChatCallbacks
-    {
-        
-    }
-    
-    public interface IRoomCallbacks
+    internal interface IRoomCallbacks
     {
         void OnRoomListUpdate(Room[] rooms);
         void OnRoomCreated(Room room);
@@ -45,7 +35,7 @@ namespace Klem.SocketChat.ChatSystem.Interfaces
         void OnRoomLeftByOtherUser(RoomAndUser room);
     }
     
-    public interface IChatMessageCallbacks
+    internal interface IChatMessageCallbacks
     {
         void OnGeneralChatMessage(ChatMessage message);
         void OnRoomChatMessage(ChatMessage message);

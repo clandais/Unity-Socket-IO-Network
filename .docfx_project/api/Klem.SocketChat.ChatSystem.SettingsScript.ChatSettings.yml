@@ -23,7 +23,7 @@ items:
   source:
     id: ChatSettings
     path: ''
-    startLine: 1760
+    startLine: 1756
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.SettingsScript
@@ -48,7 +48,7 @@ items:
   source:
     id: Instance
     path: ''
-    startLine: 1764
+    startLine: 1760
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.SettingsScript
@@ -73,7 +73,7 @@ items:
   source:
     id: ServerUri
     path: ''
-    startLine: 1788
+    startLine: 1785
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.SettingsScript
@@ -98,7 +98,7 @@ items:
   source:
     id: ServerPort
     path: ''
-    startLine: 1789
+    startLine: 1786
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.SettingsScript
@@ -123,7 +123,7 @@ items:
   source:
     id: ServerToken
     path: ''
-    startLine: 1790
+    startLine: 1787
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.SettingsScript
@@ -148,7 +148,7 @@ items:
   source:
     id: EnableLogging
     path: ''
-    startLine: 1794
+    startLine: 1791
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.SettingsScript
@@ -175,7 +175,7 @@ items:
   source:
     id: ServerMessageColor
     path: ''
-    startLine: 1796
+    startLine: 1793
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.SettingsScript
@@ -200,7 +200,7 @@ items:
   source:
     id: UserMessageColor
     path: ''
-    startLine: 1797
+    startLine: 1794
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.SettingsScript
@@ -225,7 +225,7 @@ items:
   source:
     id: UserColors
     path: ''
-    startLine: 1799
+    startLine: 1796
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.SettingsScript
@@ -383,7 +383,6 @@ references:
     isExternal: true
   - name: )
 - uid: Global.List`1
-  commentId: '!:Global.List`1'
   isExternal: true
   name: List<>
   nameWithType: List<>

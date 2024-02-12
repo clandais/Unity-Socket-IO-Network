@@ -7,7 +7,7 @@ items:
   children:
   - Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.ChatId
   - Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.Color
-  - Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.PhotonId
+  - Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.OtherIds
   - Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.RoomId
   - Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.Username
   langs:
@@ -20,7 +20,7 @@ items:
   source:
     id: SocketIOUser
     path: ''
-    startLine: 1241
+    startLine: 1232
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.DataClasses
@@ -53,7 +53,7 @@ items:
   source:
     id: ChatId
     path: ''
-    startLine: 1244
+    startLine: 1235
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.DataClasses
@@ -76,7 +76,7 @@ items:
   source:
     id: Username
     path: ''
-    startLine: 1245
+    startLine: 1236
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.DataClasses
@@ -85,29 +85,29 @@ items:
     return:
       type: System.String
     content.vb: Public Username As String
-- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.PhotonId
-  commentId: F:Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.PhotonId
-  id: PhotonId
+- uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.OtherIds
+  commentId: F:Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.OtherIds
+  id: OtherIds
   parent: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser
   langs:
   - csharp
   - vb
-  name: PhotonId
-  nameWithType: SocketIOUser.PhotonId
-  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.PhotonId
+  name: OtherIds
+  nameWithType: SocketIOUser.OtherIds
+  fullName: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.OtherIds
   type: Field
   source:
-    id: PhotonId
+    id: OtherIds
     path: ''
-    startLine: 1246
+    startLine: 1237
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.DataClasses
   syntax:
-    content: public string PhotonId
+    content: public List<string> OtherIds
     return:
-      type: System.String
-    content.vb: Public PhotonId As String
+      type: Global.List{System.String}
+    content.vb: Public OtherIds As List(Of String)
 - uid: Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.Color
   commentId: F:Klem.SocketChat.ChatSystem.DataClasses.SocketIOUser.Color
   id: Color
@@ -122,7 +122,7 @@ items:
   source:
     id: Color
     path: ''
-    startLine: 1247
+    startLine: 1238
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.DataClasses
@@ -145,7 +145,7 @@ items:
   source:
     id: RoomId
     path: ''
-    startLine: 1248
+    startLine: 1239
   assemblies:
   - cs.temp.dll
   namespace: Klem.SocketChat.ChatSystem.DataClasses
@@ -210,3 +210,56 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: Global.List{System.String}
+  commentId: '!:Global.List{System.String}'
+  definition: Global.List`1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )

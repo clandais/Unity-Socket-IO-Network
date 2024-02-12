@@ -2,18 +2,18 @@
 
 namespace Klem.SocketChat.ChatSystem.Infra
 {
-    public interface IPublisher<in T>
+    internal interface IPublisher<in T>
     {
         void Publish(T message);
     }
     
-    public interface ISubscriber<out T>
+    internal interface ISubscriber<out T>
     {
         IDisposable Subscribe(Action<T> handler);
         void Unsubscribe(Action<T> handler);
     }   
     
-    public interface IMessageChannel<T> : IPublisher<T>, ISubscriber<T>, IDisposable
+    internal interface IMessageChannel<T> : IPublisher<T>, ISubscriber<T>, IDisposable
     {
         bool IsDisposed { get; }
     }

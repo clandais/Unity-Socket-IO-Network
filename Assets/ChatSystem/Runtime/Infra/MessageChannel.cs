@@ -4,7 +4,7 @@ using UnityEngine.Assertions;
 
 namespace Klem.SocketChat.ChatSystem.Infra
 {
-    public class MessageChannel<T> : IMessageChannel<T>
+    internal class MessageChannel<T> : IMessageChannel<T>
     {
         
         private readonly List<Action<T>> _handlers = new List<Action<T>>();

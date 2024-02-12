@@ -10,6 +10,7 @@ namespace Klem.SocketChat.ChatSystem.ChannelContainers
     internal class ConnectionChannelsContainer : List<IConnectionCallbacks>, IConnectionCallbacks
     {
         public MessageChannel<SocketServerConnection> ConnectionMessageChannel { get; } = new MessageChannel<SocketServerConnection>();
+        public  MessageChannel<SocketIOUser> NewUserConnectedToMasterMessageChannel { get; } = new MessageChannel<SocketIOUser>();
         public MessageChannel<string> DisconnectingMessageChannel { get; } = new MessageChannel<string>();
         public MessageChannel<int> ReconnectAttemptMessageChannel { get; } = new MessageChannel<int>();
         public MessageChannel<EventArgs> PingMessageChannel { get; } = new MessageChannel<EventArgs>();
@@ -22,6 +23,7 @@ namespace Klem.SocketChat.ChatSystem.ChannelContainers
         public ConnectionChannelsContainer()
         {
             ConnectionMessageChannel.Subscribe(OnConnectedToMaster);
+            NewUserConnectedToMasterMessageChannel.Subscribe(OnNewUserConnectedToMaster);
             DisconnectingMessageChannel.Subscribe(OnDisconnecting);
             DisconnectMessageChannel.Subscribe(OnDisconnected);
             ReconnectAttemptMessageChannel.Subscribe(OnReconnectAttempt);
@@ -37,6 +39,14 @@ namespace Klem.SocketChat.ChatSystem.ChannelContainers
             foreach (IConnectionCallbacks callbacks in this)
             {
                 callbacks.OnConnectedToMaster(connection);
+            }
+        }
+        
+        public void OnNewUserConnectedToMaster(SocketIOUser user)
+        {
+            foreach (IConnectionCallbacks callbacks in this)
+            {
+                callbacks.OnNewUserConnectedToMaster(user);
             }
         }
 

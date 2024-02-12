@@ -19,7 +19,8 @@ namespace Klem.SocketChat.ChatSystem.SettingsScript
                     ChatSettings[] assets = Resources.LoadAll<ChatSettings>("");
                     if (assets == null || assets.Length < 1)
                     {
-                        throw new Exception("Could not find any ChatSettings asset in the Resources Folder");
+                        Debug.LogError("Could not find any ChatSettings asset in the Resources Folder");
+                        return null;
                     }
                     
                     // Warn if there are more than one

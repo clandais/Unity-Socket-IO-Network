@@ -4,10 +4,8 @@ using UnityEngine;
 
 namespace Klem.SocketChat.ChatSystem.Debugging
 {
-    /// <summary>
-    ///     Similar to Photon.Pun.UtilityScripts.StatesGui, but for this system
-    /// </summary>
-    [AddComponentMenu("ChatSystem/Debugging/StatesGui")]
+    /// <exclude />
+    [AddComponentMenu("Klem/SocketChat/Debugging/StatesGui")]
     public class StatesGui : MonoBehaviourSocketCallBacks
     {
         public Rect GuiOffset = new Rect(600, 180,200, 400);
@@ -97,7 +95,11 @@ namespace Klem.SocketChat.ChatSystem.Debugging
                         GUILayout.Label($"UserName: {SocketIONetwork.User.Username}");
                         GUILayout.Label($"UserId: {SocketIONetwork.User.ChatId}");
                         GUILayout.Label($"Color: {SocketIONetwork.User.Color}");
-                        GUILayout.Label($"PhotonId: {SocketIONetwork.User.PhotonId}");
+                        
+                        for (int i = 0; i < SocketIONetwork.User.OtherIds.Count; i++)
+                        {
+                            GUILayout.Label($"Other ID {i}: {SocketIONetwork.User.OtherIds[i]}");   
+                        }
                     }
                 }
 
@@ -163,7 +165,7 @@ namespace Klem.SocketChat.ChatSystem.Debugging
                 
                 if (GUILayout.Button("List all rooms"))
                 {
-                    SocketIONetwork.GetAllRooms(true);
+                    SocketIONetwork.GetAllRooms(log: true);
                 }
                 
                 if (GUILayout.Button("List all users"))
@@ -183,6 +185,19 @@ namespace Klem.SocketChat.ChatSystem.Debugging
                     if (GUILayout.Button("Join Random Room"))
                     {
                         SocketIONetwork.JoinRandomRoom();
+                    }
+                }
+                
+                if (GUILayout.Button("Send Global Chat Message"))
+                {
+                    SocketIONetwork.SendGeneralChatMessage("Hello General Chat Message!");
+                }
+
+                if (SocketIONetwork.InRoom)
+                {
+                    if (GUILayout.Button("Send Room Message"))
+                    {
+                        SocketIONetwork.SendRoomChatMessage("Hello Room Chat Message!");
                     }
                 }
                 

@@ -3,6 +3,9 @@
     uidRegex: ^Klem\.SocketChat\.ChatSystem
     type: Namespace
 - include:
+    uidRegex: ^Klem\.SocketChat\.ChatSystem\.Interfaces
+    type: Interface
+- include:
     uidRegex: ^Global
     type: Namespace
 - exclude:

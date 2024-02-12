@@ -26,41 +26,6 @@
   items:
   - uid: Klem.SocketChat.ChatSystem.Debugging.StatesGui
     name: StatesGui
-- uid: Klem.SocketChat.ChatSystem.Infra
-  name: Klem.SocketChat.ChatSystem.Infra
-  items:
-  - uid: Klem.SocketChat.ChatSystem.Infra.DisposableSubscription`1
-    name: DisposableSubscription<T>
-    name.vb: DisposableSubscription(Of T)
-  - uid: Klem.SocketChat.ChatSystem.Infra.IMessageChannel`1
-    name: IMessageChannel<T>
-    name.vb: IMessageChannel(Of T)
-  - uid: Klem.SocketChat.ChatSystem.Infra.IPublisher`1
-    name: IPublisher<T>
-    name.vb: IPublisher(Of T)
-  - uid: Klem.SocketChat.ChatSystem.Infra.ISubscriber`1
-    name: ISubscriber<T>
-    name.vb: ISubscriber(Of T)
-  - uid: Klem.SocketChat.ChatSystem.Infra.MessageChannel`1
-    name: MessageChannel<T>
-    name.vb: MessageChannel(Of T)
-  - uid: Klem.SocketChat.ChatSystem.Infra.UpdateRunner
-    name: UpdateRunner
-- uid: Klem.SocketChat.ChatSystem.Interfaces
-  name: Klem.SocketChat.ChatSystem.Interfaces
-  items:
-  - uid: Klem.SocketChat.ChatSystem.Interfaces.ICallbacksContainer
-    name: ICallbacksContainer
-  - uid: Klem.SocketChat.ChatSystem.Interfaces.IChatCallbacks
-    name: IChatCallbacks
-  - uid: Klem.SocketChat.ChatSystem.Interfaces.IChatMessageCallbacks
-    name: IChatMessageCallbacks
-  - uid: Klem.SocketChat.ChatSystem.Interfaces.IConnectionCallbacks
-    name: IConnectionCallbacks
-  - uid: Klem.SocketChat.ChatSystem.Interfaces.IErrorCallbacks
-    name: IErrorCallbacks
-  - uid: Klem.SocketChat.ChatSystem.Interfaces.IRoomCallbacks
-    name: IRoomCallbacks
 - uid: Klem.SocketChat.ChatSystem.SettingsScript
   name: Klem.SocketChat.ChatSystem.SettingsScript
   items:
