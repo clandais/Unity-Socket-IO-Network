@@ -8,7 +8,7 @@ namespace Klem.SocketChat.ChatSystem.Debugging
     [AddComponentMenu("Klem/SocketChat/Debugging/StatesGui")]
     public class StatesGui : MonoBehaviourSocketCallBacks
     {
-        public Rect GuiOffset = new Rect(600, 180,200, 400);
+        public Rect GuiOffset = new Rect(350, 0,300, 400);
         public bool DontDestroy = true;
         public bool Latency = true;
         public bool ServerUri = true;

@@ -2,6 +2,10 @@
 
 ## Quick example
 
+Create two GameObjects in your scene.
+- On the first one, drag and drop the script found in Photon/PhotonUnityNetworking/UtilityScripts/Debugging/StatesGui.cs. This will allow you to see the state of the Photon connection in the Unity Editor.
+- On the second one, add the component `Klem > SocketChat > Debugging > StatesGui`. This will allow you to see the state of the SocketIO connection in the Unity Editor.
+
 Let's create two scripts: `ChatRoomCreation` and `PhotonRoomCreation`. Drag and drop them on the same GameObject.
 
 ```csharp
@@ -148,3 +152,7 @@ public class PhotonRoomCreation : MonoBehaviourPunCallbacks
 ```
 
 Obviously, this is a very simple example. You might want to add more check, error handling and setup a messagge channel between the two systems. But it should give you a good starting point.
+
+With the help of `ParallelSync`, you can qucikly test your setup and see if everything is working as expected.
+
+![ParallelSync](../resources/parallel-sync.png)
