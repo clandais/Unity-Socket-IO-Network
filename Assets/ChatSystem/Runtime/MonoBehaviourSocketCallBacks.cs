@@ -26,7 +26,7 @@ namespace Klem.SocketChat.ChatSystem
         /// <summary>
         ///     When overriding this method, make sure to call base.OnDisable() to remove the callback target.
         /// </summary>
-        public void OnDisable()
+        public virtual  void OnDisable()
         {
             SocketIONetwork.RemoveCallbackTarget(this);
         }

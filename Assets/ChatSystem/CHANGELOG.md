@@ -1,3 +1,6 @@
+### 0.0.5
+- Fixed missing virtual keyword on "MonoBehaviourSocketCallBacks.OnDisable".
+- Fixed missing message guid on SocketIONetwork.GetChatUser
 ### 0.0.4
 - Updated README.md
 - Quick fix on StatesGui.cs and ChatRoomCreation.cs

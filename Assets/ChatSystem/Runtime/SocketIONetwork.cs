@@ -287,7 +287,7 @@ namespace Klem.SocketChat.ChatSystem
         public static async Task<SocketIOUser> GetChatUser(string chatId)
         {
             SocketIOUser user = null;
-            await Socket.EmitAsync("get-user", response =>
+            await Socket.EmitAsync(SocketUserEventsOut.GET_USER, response =>
             {
                 user = response.GetValue<SocketIOUser>();
             }, chatId);
